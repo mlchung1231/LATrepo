@@ -6,6 +6,6 @@
 ### 課程筆記區  
 
 ### 作業連結區  
-[This link](http://example.net/) has no title attribute.
+[Homework1]([http://example.net/](https://github.com/mlchung1231/LATrepo/blob/main/week3/0308.ipynb)).
 
 ### 專題連結區  
