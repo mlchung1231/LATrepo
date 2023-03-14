@@ -6,6 +6,6 @@
 ### 課程筆記區  
 
 ### 作業連結區  
---[作業一](https://github.com/mlchung1231/LATrepo/blob/main/week3/0308.ipynb).
+  [作業一](https://github.com/mlchung1231/LATrepo/blob/main/week3/0308.ipynb)
 
 ### 專題連結區  
