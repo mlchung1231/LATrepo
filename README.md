@@ -8,6 +8,6 @@
 ### 作業連結區  
 ● [作業一](https://github.com/mlchung1231/LATrepo/blob/main/week3/0308.ipynb)  
 
-● [作業二](https://github.com/mlchung1231/LATrepo/tree/main/week5)(檔案太大GitHub無法呈現，已將作業內容截圖放於資料夾內(成果截圖1~5))
+● [作業二](https://github.com/mlchung1231/LATrepo/blob/main/week5/0322(HW2).ipynb)
 
 ### 專題連結區  
