@@ -1,0 +1,1052 @@
+ORIGINAL ARTICLE
+Smart manufacturing systems: state of the art and future trends
+Y. J. Qu1 & X. G. Ming1 & Z. W. Liu1 & X. Y. Zhang1 & Z. T. Hou2
+Received: 11 October 2018 /Accepted: 14 April 2019 /Published online: 8 May 2019
+# Springer-Verlag London Ltd., part of Springer Nature 2019
+Abstract
+With the development and application of advanced technologies such as Cyber Physical System, Internet of Things, Industrial
+Internet of Things, Artificial Intelligence, Big Data, Cloud Computing, Blockchain, etc., more manufacturing enterprises are
+transforming to intelligent enterprises. Smart manufacturing systems (SMSs) have become the focus of attention of some
+countries and manufacturing enterprises. At present, there are some applications of SMSs in different industrial fields.
+However, there is still a lack of a unified definition of SMSs and a unified analysis of requirements. In order to have a
+comprehensive understanding of SMSs, this paper summarized the evolution, definition, objectives, functional requirements,
+business requirements, technical requirements, and components of SMSs. At the same time, it points out the current development
+status and level. Based on above, an autonomous SMSs model driven by dynamic demand and key performance indicators is
+proposed. Through the review of this paper, the reference can be provided for the transformation of more manufacturing
+enterprises from the traditional to the intellectualized ones.
+Keywords Smart manufacturing systems . Evolution of manufacturing . Requirements . Components . Future perspective
+1 Introduction
+The fourth industrial revolution is a new stage for manufacturing systems, especially smart manufacturing systems (SMSs),
+which can quickly respond to the global competition and customization requirements. Hyoung Seok et al. [1] analyzed the
+strategy of some countries such as Korea—“Manufacturing
+Innovation 3.0,” Germany—“Industry 4.0,” and USA—“smart
+manufacturing” in building SMSs and the development of related technologies. Andrew Kusiak [2] gave six pillars of SMSs
+from the manufacturing components in manufacturing technology and processes, materials, data, predictive engineering, sustainability, resource sharing, and networking. Bo-hu Li et al. [3]
+gave the review of AI applications in intelligent manufacturing.
+Nagorny et al. [4] gave a review of Big Data application in smart
+manufacturing (SM) to optimize the key performance indicator,
+diagnose, predict, and optimize design. Lidong and Guanghui
+[5] gave the characteristic and the relationship of Big Data,
+Industry 4.0, and CPS. Furthermore, other studies are concerned
+of specific industrial fields, such as automobile manufacturing
+[6], electronic industry [7], and other specific industries.
+Some extensive effort continues to be exerted to make
+manufacturing intelligence; strong evidences have proved that
+SMSs have become highly autonomous. These changes are
+slowly becoming reality, and concluded as followings:
+& Advanced information and communication technology
+such as cognitive agent, swarm intelligence, and cloud
+computing are used to integrate, organize, and allocate
+the machine resources [8].
+* Y. J. Qu
+iansaqo00@163.com
+X. G. Ming
+xgming@sjtu.edu.cn
+Z. W. Liu
+ljplzw@163.com
+X. Y. Zhang
+513615330@qq.com
+Z. T. Hou
+117615188@qq.com
+1 Shanghai Institute of Producer Service Development, Shanghai
+Research Center for industrial Informatics, Shanghai Key Lab of
+Advanced Manufacturing Environment, Institute of Intelligent
+Manufacturing and Information Engineering, School of Mechanical
+Engineering, Shanghai Jiao Tong University, Dongchuan Road 800,
+Minhang District, Shanghai City, People’s Republic of China
+2 Shenzhen Institutes of Advanced Technology, Chinese Academy of
+Sciences, 1068 Xueyuan Avenue, Shenzhen University Town,
+Shenzhen, People’s Republic of China
+The International Journal of Advanced Manufacturing Technology (2019) 103:3751–3768
+https://doi.org/10.1007/s00170-019-03754-7
+& An increasing attention on areas such as self-regulation in
+self-organizing multi-agent systems for adaptive and intelligent manufacturing control [9]. The emergence of selforganization value in intelligent manufacturing industry
+chains model to select an elite strategy [10].
+& The increasing importance of continuous improvement
+[11], self-optimizing processes [12], and data-driven decision making [13].
+& Predictive situation awareness [14], statistical process
+monitoring and prognostics [15], prognostics and health
+management [14], predictive maintenance [16], and the
+predictive manufacturing situation [17] are increasing the
+manufacturing operation reliability and accuracy.
+However, there is no clear definition, uniform requirements, and organization research of SMSs. This article provides a review witnessing requirements of SMSs and components of SMSs problems. The authors review papers [11,
+18–25] for an extensive understanding of requirements and
+components for a review [26–31]. This paper aims to explore
+the existing literature on integrated requirements and components by analyzing both problems of technological characteristics and solution approaches applied to identify lack in the
+literature and highlight future research opportunities. The
+main contributions of this study are as follows: (1) providing
+an extensive review of recent research in the field of SMSs; (2)
+proposing basic objective and requirements of SMSs; (3) providing the components based on the basic objective and requirements; (4) indicating the further research directions to
+form autonomous operation. Through this paper, the authors
+want to give a requirement list for traditional manufacturing,
+overall framework, and future perspective based on the emerging technologies and managements.
+This paper is organized as follows. In Section 2, the evolution of Computer Integrated Manufacturing (CIM) to SMSs is
+briefly discussed. In Section 3, the objective and requirements
+of SMSs are discussed. The components of SMSs are described in Section 4. Section 5 discusses research challenges
+and future perspective. Section 6 concludes this paper.
+2 The evolution and definition of SMSs
+To better understand SMSs, the authors analyzed the relevant
+research in the literature, and to illustrate SMSs’ objective and
+requirements, a classification scheme including keywords and
+key characteristic cluster was made. The survey includes Web of
+Science categories such as The International Journal of
+Advanced Manufacturing Technology, International Journal of
+Production Research, Journal of Intelligent Manufacturing,
+Journal of Manufacturing Systems, Computers & Electrical
+Engineering, and so on. The search is narrowed using the following title and keywords, including the following: smart
+manufacturing systems, Internet of things/IoTs, Industrial
+Internet of Things/IIoTs, Big Data, Cloud/Cloud Computing,
+Artificial intelligent/AI, Cyber Physical System/CPS, Industry
+4.0, and using the main research organization such as smart
+manufacturing leadership coalition (SMLC), National Institute
+of Standards and Technology (NIST), Industrial Internet
+Consortium (IIC) Technology Working Group, and so on. In
+addition, the references cited in each relevant article are examined to find out additional sources of information. The articles
+are reviewed from 2014 to 2018. We will introduce the evolution of SMSs and the definition of SMSs in the next subsections.
+2.1 Evolution of smart manufacturing systems
+The evolution of SMSs is not only related to the technological
+development, but also related to the dynamic requirements of
+stakeholders and innovative business model. Smart
+manufacturing systems get real-time data which improves
+the accuracy of decision making, enhances the efficiency
+and performance of the plant, and increases overall productivity. The evolution of SMSs is shown in Fig. 1. Of course, there
+are many other manufacturing paradigms (digital manufacturing, network manufacturing, lean manufacturing, agile
+manufacturing, etc.) in evolution roadmap of manufacturing
+system.
+In this paper, we mainly focus on the SMSs. Typical paradigms of smart manufacturing [35] are proposed in the report
+as follows:
+& Industrial community modeling and simulation platforms,
+internet-based swarm intelligence customized, innovative
+design, and model-driven intelligent collaborative
+manufacturing.
+& Integrating human factors and decisions into plant optimization software and user interfaces.
+& Affordable industrial data collection, management systems, and application, autonomous smart manufacturing
+units and smart production.
+& Enterprise-wide integration including business systems,
+manufacturing plants, customers and suppliers, and
+knowledge-driven cloud service for related stakeholders.
+2.2 Fundamental definitions in smart manufacturing
+Due to the importance of the fundamental concepts of smart
+manufacturing, there has been a growing requirement of constructing SMSs to provide the basis for further research on
+requirements, objective, components, research challenges,
+and future perspective. Through the past research review, we
+summarized the definition of smart manufacturing from engineering view, smart interconnection (IoT and CPS) view, and
+precise decision (Big Data, AI, and Cloud Computing) view.
+3752 Int J Adv Manuf Technol (2019) 103:3751–3768
+Definition 1: From engineering view, smart manufacturing
+[35] is an intensified application of advanced intelligence systems which enable the rapid manufacturing of new products,
+dynamic response to product demand, and real-time optimization of manufacturing production and supply chain networks.
+Meanwhile, SMSs are new platforms which integrate the
+products, operations, and business systems spanning factories,
+distribution centers, companies, and the entire supply chains
+under the knowledge-rich environment. In SMSs, all aspects
+of manufacturing are connected, intake of raw materials to the
+delivery of finished smart products to customer.
+Definition 2: From interconnection and communication (IoT
+and CPS) view, SMSs for Industry 4.0 is proposed by Zheng
+et al. [36]. Using sensors and communication technologies to
+capture data at all stages of manufacturing, SMSs are getting
+smart in that the rate of production is increased, while errors
+and production waste are reduced.
+Definition 3: From the view of predictive analysis and decision
+making, more accessible and ubiquitous data form big data
+environment, help manufacturing enterprises better predict,
+balance production, and improve their efficiency and productivity [37]. Big data-based SMSs optimize the planning and
+control of manufacturing operations including the predictive
+supply, predictive manufacturing, fault diagnosis, asset utilization and risk assessment, etc.
+3 Objectives and requirements of SMSs
+The goal of SMSs is realized effectively through functions,
+which are accomplished by business activities integrating the
+relevant advanced technologies [25]. Performance metrics are
+vital factors in SMSs operation [20]. Emerging technologies
+promote the related business development and business model
+innovation. Getting the accurate requirements of SMSs is the
+initial task for the designer, consultant, and manufacturers in
+the design and development stage. Systematic identification of
+SMSs’ requirements is the primary task to be solved for manufacturers. This paper proposed the requirements of SMSs
+inspired by the reference architecture of Industry 4.0 [38],
+reference architecture of Industrial internet reference architecture [39], and framework for Cyber Physical Systems.
+Meanwhile, the authors identified and summarized the objectives and requirement status of the SMSs based on recent
+years’ research from the design and development view. The
+authors suggest the vital factors needed to be considered, including the basic key objectives/value proposition in the strategic level, business and autonomous functions in the tactical
+level, components in the executive level, and the emerging
+technologies in the support level.
+Based on the literature and key words clustering, the authors suggest traditional manufacturing systems in transformation need to consider basic requirements from four perspectives, including objective, functional requirements, technological requirements, and business requirements. The objectives
+and requirements of SMSs are shown in Fig. 2. The detailed
+objective and requirements contents of SMSs are introduced
+in the following subsections.
+3.1 Key objective
+Bititci et al. [40] quantified and aggregated the performance
+strategies on cost, quality, delivery, and flexibility in the
+SMSs. Meanwhile, mapping the strategic goal of performance
+is proposed in SMSs design phase [18], containing agility,
+asset utilization, and sustainability under the sensor-enabled
+manufacturing equipment and controller software environment. Autonomous, self-aware, and self-correcting method
+Aspects 
+Time 
+Computer 
+technology and 
+Lean thinking,
+AI 1.0 
+CPS, Cloud 
+computing 
+Big data, Internet 
+of things, AI 2.0, 
+AR/VR, Block 
+chain 
+Computer 
+technology, 
+information 
+technology 
+Personalization 
+Sustainability 
+and Customer 
+participation
+Computer 
+integrated 
+manufacturing 
+Intelligent 
+manufacturing 
+systems 
+Smart 
+manufacturing 
+system
+1970s 1990s 2010s
+Business 
+model
+Manufacturing 
+paradigm 
+Enable 
+technologies 
+Mass 
+customization
+Fig. 1 The evolution of smart
+manufacturing systems [32–34]
+Int J Adv Manuf Technol (2019) 103:3751–3768 3753
+is proposed by Feeney et al. [41] mainly focusing on the
+product design. As already stated in the previous part of this
+paper, the actual definition or clustering of the objective of
+SMSs has not yet been settled on. This paper divides the key
+objective requirements of SMSs into three aspects though the
+K-means method.
+3.2 
+Function
+3.3 Emerging 
+Technologies 
+3.1 Key 
+objectives
+Business 
+planning & 
+logistics
+Big data 
+CPS
+Cloud & fog 
+computing 
+AI
+Self-sensing 
+Self-adaptive 
+Load-balancing 
+Status sensing 
+Win-win partnership 
+Autonomous lean 
+operation 
+Self-decision 
+Sustainable value 
+High performance computing
+Platform/resources sharing
+Prediction and anomaly detection 
+Discover knowledge & create value
+Smart machines and 
+advanced robotics et.
+Quality management 
+Manufacturing analytics 
+Supply chain Mgt.
+Planning and control 
+Performance assurance 
+Design and improvement 
+Predict mechanical failures
+Predict remaining useful life
+Interaction and communication
+Computing 
+Adaptive 
+Anomaly detection 
+Reconfigurable 
+Optimization
+Predictive & Prognostics
+Key objective and 
+requirements SMSs
+3.4 
+Business 
+Self-organization 
+IoTs
+Interconnection
+Real-time communication
+Real-time synchronization & optimization
+Cognitive 
+Economic value 
+Social value 
+Enviroment value 
+Manufacturer 
+Multi-stakeholder (customer, 
+supplier, communities, etc.)
+Lean management 
+Autonomous operation 
+Accurate and timely decision -making
+ Operations 
+managements
+Control 
+Block chain Immutability, Anti-counterfeiting 
+3D printing Print-on-demand, easy to maintain and deploy 
+VR Improve user satisfy 
+AR Sharing knowledge 
+Fig. 2 Mind map of the SMSs’
+objectives and requirements
+3754 Int J Adv Manuf Technol (2019) 103:3751–3768
+Autonomous lean operation The main target for establishing
+autonomous lean SMSs is to increase the efficiency and autonomy of manufacturing system. It is necessary to develop an
+evaluation system that considers the changes in emerging and
+order processing due to autonomy. Smart manufacturing systems enable the user to evaluate autonomous processes against
+conventionally managed processes. Furthermore, it is necessary to define the limitations of management and autonomy to
+better integrate different factors (resource, KPIs, assemble)
+into the system structure. In this way, dynamical targets can
+be defined and new characteristics of autonomy can be considered. Autonomous SMSs [42] contain the ability of
+reacting to special and unanticipated events. Concerning the
+scheduling of appropriate activities, management strategies
+are required to avoid/minimize the risk. Another autonomous
+SMSs consider the enterprise operation under the lean thinking, integrating AI and managerial method. This objective
+mainly focuses on the fusion of emerging technology and
+management.
+Sustainable value added Oertwig et al. [43] proposed the
+forming global value creation networks in the design and control of partner relations for an economic, environmental, and
+social evaluation of products, services, and value chains to be
+solved. Adam Brown et al. [44] introduced that achieving
+sustainability in manufacturing requires a holistic view spanning product design, manufacturing processes, manufacturing
+systems, and the entire supply chain. Particularly, the notion of
+case-based research acting to extend or refine the theory is
+relevant to this work. This objective mainly focuses on sustainability and value added in SMSs lifecycle.
+Win-win partnership In autonomous operation environments,
+the ultimate objective of SMSs is to create a real-time and
+continuous cooperation in which the entire lifecycle of
+SMSs is more effective than the sum of all its individual components. Win-win partnership is based on the autonomous
+lean operation, sustainable value added, information, and
+knowledge sharing to achieve multi-stakeholder and SMSs
+enterprise co-development.
+3.2 Functional requirements
+Functional model of SMSs identifies the requirement of activities and makes those activities efficiently and effectively
+based on the off-the-shelf software systems [25]. The usage
+of real-time analytics capacities are (1) gathering data and
+converting it into useful knowledge, and (2) developing predictive, diagnostic, and decision models [11]. Intelligent enterprise should then encompass features like adaptivity, reasoning, knowledge representation, and processing [45, 46].
+Functional requirements are analyzed from the autonomous
+capacity view to analyze the SMSs, including the capacity of
+capturing the information and data from smart equipment or
+mobile terminal, capacity of adapting the dynamic requirements and activities, and auto-optimization capacity. This paper concludes the SMSs fundamental functions including selfsensing, self-adaptive, self-organizing, and self-deciding to
+achieve the manufacturing system to be smarter driven by
+CPS, big data, AI, and other advanced technologies.
+Autonomous functions are introduced as follows:
+Self-sensing function is the basic function of SMSs, which
+captures the data and the critical information from the environment, physical or production process involving product,
+quality, material, machine, tools, etc. Sensing enterprise is
+proposed in [47] to describe “an enterprise making use of
+the sensing possibilities provided by interconnected ‘environments’, anticipating future decisions by using multidimensional information captured through physical and virtual objects and providing added value information to enhance
+its global context awareness.”
+Self-adaptive function is operating the behavior function of
+SMSs’ elements, which are based on the real-time sensing
+data and information. Through the different algorithm and
+rules, self-adaptive behavior of SMSs is regarded as continuous learning or life-long learning. As a primary intelligence
+level, adaptivity implies the capacity of acting on rules “IfThen-Else” [48].
+Self-organizing function is the capacity of solving the
+emergent requirements, which is based on the self-sensing
+and self-adaptivity. The requirements of self-organization of
+SMSs are discussed under the dynamics, distribution and decentralization, self-organization, and self-regulation environments through the multi-agent and asynchronous backtracking
+technology.
+Self-deciding function requirements are based on the
+above-mentioned functions, which is data-driven decision
+making in manufacturing [13], including the identification,
+collection, communication, analysis, sharing, retrieving, and
+learning. This function solves certainty questions, possible
+questions, and indeterminacy questions in the SMSs to
+achieve the autonomy and precise decision, which is based
+on the big data including historical and real-time data.
+Scholars’ research on autonomous function related SM operation management is mostly focused on a different application area, such as simply studying from quality improvement
+or remote maintenance. Based on the existing research and
+combined with the related SMSs projects, we summarize
+and conclude the related research of autonomous functions
+of SMSs shown in Table 1.
+3.3 Technological requirements
+It is no doubt that the integration and cross-application of
+many advanced technologies enhance the achievement of
+SMSs’ autonomous lean operation and sustainable value
+Int J Adv Manuf Technol (2019) 103:3751–3768 3755
+added. Digitalization enhancing business process software
+and manufacturing execution systems are now available to
+satisfy the requirements of fully computerized and automated
+integration [58]. Application production and product design
+software system provide virtual prototyping for virtual
+manufacturing system. It carries out manufacturing tasks and
+decision making based on digital models and simulation in a
+virtual environment [59]. We mainly focus on the smart
+connection technologies, smart decision, and predictive
+technologies. The technologies are applied in SMSs
+concluded as follows:
+& Cyber physical shop floors were mentioned in [6, 53, 60,
+61] to achieve self-organizing and self-adaptive intelligent
+shop floor. A knowledge-based tool for designing cyber
+physical production systems is provided in [62].
+& Lee [63] provided the design challenges for the computing
+and networking technologies. Their research gave an adequate foundation for CPS to suit SMSs. The design and
+modeling, simulation and integration of Cyber Physical
+System methods and applications were provided in article
+[64].
+& Visualization techniques and virtual reality technologies are
+applied in the manufacturing system to improve efficiency
+in product development, manufacturing design, planning,
+assembly, and disassembly process training [34, 65–67].
+In the Industry 4.0 era, some research focus on the evolution of production systems [68], lean production systems [69,
+70], and demonstration production line [71]; other researches
+demonstrate the key technologies [36], application and challenges [72], smart operator [73], and implementation smart
+factories [74]. Syed Imran Shafiq et al. [75] gave the framework for the intelligent CIM in IoT setting, including four
+stages such as hard-resource of CIM, IoTs, sensing and semantic analysis, and cloud CIM application. Sascha Julian
+Oks et al. [76] developed the application map for industrial
+Cyber Physical Systems. Therefore, the technologies of SMSs
+can be concluded into two types: the basic technologies (simulation, manufacturing engineering technologies, autonomous
+robots’ technologies, additive manufacturing, etc.); the emerging technologies (Industrial Internet of Things, Cyber Physical
+System, augmented reality/virtual reality (AR/VR), Big Data,
+Cloud/Cloud Computing, 3D printing, cybersecurity, etc.).
+Based on the related researches and above mentioned, we
+conclude the selected emerging technologies that are particularly significant for SMSs illustrated in Table 2.
+3.4 Business requirements
+Based on the functional and technological requirements of
+SMSs, in this subsection, the business requirements of SMSs
+are proposed to better illustrated the existing SMSs. Industry
+4.0 contains three dimensions to promote the computerization
+of manufacturing industries, supplying more flexibility, reduce lead time, adapting to customer demands with small
+batch sizes, and provide new offering of downstream services
+[5]. The design principles for Industry 4.0 [113, 114] include
+Table 1 Related research about autonomous functions of SMSs
+Autonomous function Characteristic Description, methods, and benefits
+Self-sensing function Status sensing Sensing ability sustains the system’s interoperability and seamless integration in
+enterprise information systems [46, 49]. The data is obtained from the environment
+and smart shop floor by perception module and sensing devices. This method
+used in the matching system and ubiquitous sensor network to collect production data [50]
+Cognitive Self-aware inventory monitoring is proposed in [51] to maintain adequate stock
+levels to help manufacturer adjust increasing demand or rising cost
+Self-adaptive function Anomaly detection Self-adaptive energy optimization has been applied in the prediction-based
+manufacturing center to demand side management for Cyber Physical Systems
+[52] through CPSO and PSO
+Adaptivity Self-adaptive model is proposed in the CPS of intelligent shop floor [53] to
+effectively handle disturbances by the gray relational analysis, multi-agent,
+and the hierarchy conflict resolution methods
+Self-organizing function Reconfigurable Self-organizing effectively improved the reconfigurability and responsiveness for
+intelligent shop floor [53]
+Load balancing Self-organizing evaluation model and algorithm are used in cloud manufacturing
+platforms based on user behavior data to effectively evaluate manufacturing
+cloud service and users by entropy value method [54]
+Self-deciding function Predictive & prognostics Smart decision making is solved by search algorithm [55] to design manufacturing
+network, which is used the Pareto-optimal method in handling production
+monitoring and scheduling [56]
+Optimization According to quality-oriented model, smart machining system is achieved
+self-optimizing control [57]
+3756 Int J Adv Manuf Technol (2019) 103:3751–3768
+Table 2 Related research about emerging technologies used in SMSs
+Tech. Characteristic Solving questions, application benefits, and limitations
+CPS Real-time communication Cyber physical manufacturing services are new data-based services
+and business models [77]
+Interaction and communication Constructing five levels’ CPS manufacturing processes [78] to provide
+optimized production planning and inventory management plans for
+factory management
+Computing Remote real-time sensing, process monitoring, and diagnosis and prognosis
+by the high performance computing [79, 80]
+IoTs Interconnection Capturing and sharing real-time production information through reducing
+inventory and lead time [81], which is implemented in automotive
+harness parts manufacturing
+Real-time synchronization
+& optimization
+Realize real-time synchronization in production logistics [82] to achieve
+multilevel dynamic adaptability
+Realize smart interconnection in handling heterogeneous equipment,
+online service generation, and quick configuration and deployment [83]
+Realize the intelligent perception and optimal-allocation [84], to solve
+manufacturing resource matching to supply-demand questions.
+Enhance real-time energy efficiency optimization in production
+management [85], which is verified in energy-intensive manufacturing
+enterprises
+Big data Discover knowledge
+& create value
+Used in the manufacturing and maintenance process to discover knowledge
+to optimize production process and service strategy [86]. Visible value
+streams, RFID-Cuboid model is proposed by Zhong et al. [87] presenting
+the RFID-enabled shop floor logistics big data to visualize operations and
+behaviors. Improving existing abilities (fault detection [88]) and supporting
+new abilities (predictive maintenance [89]), case study as online analytics
+of semiconductor manufacturing [7, 16]
+Prediction Taking benefits to manufacturing industry including forecasts of product
+demand, quicker service and operational support to customers, and
+optimization of the factory performance [90]
+Used in supply chain management mitigates supply chain social risk [91].
+An architecture of big data analytics platform is proposed by Lee et al. [92] to
+help more small- and medium-sized manufacturing enterprise to solve the
+quality questions in the factory. Statistical process monitoring and intelligent
+monitoring system consist of initialization, learning, and prediction in real
+time [93]. Prediction and anomaly detection improve diagnostics, and
+prognostics in equipment health monitoring, predictive maintenance [94, 95],
+predictive scheduling, virtual metrology, and yield prediction
+Optimization & accurate
+and timely decision making
+Optimization scheduling to ensure the load balance and shorten the total
+completion time [96]. Through the big data feedback, reduced load-unbalance
+in the smart shop floor and self-organized manufacturing system [97],
+self-detection requirement of the failures, and anomalies need to be
+optimized [98].
+Optimization product design to achieve customized requirement [99] through
+the real-time feedback from customer. Real-time data and manufacturing
+intelligence achieve accurate and timely decision making [100, 101]
+Cloud & CC Sharing resource Cloud Computing and cloud platform (IaaS, PaaS, SaaS) are widely used in
+manufacturing sectors and services sectors [102] and help more enterprise
+share their resource (manufacturing software, facilities, and capabilities) to
+their staff, supplier, and customer [103, 104]
+High performance computing Applied in CAD/CAE/CAM using cloud-based high performance computing,
+and jam management of green information systems [105]. Realized
+through obviating the disturbances, intelligent control and load balancing,
+improve performance, energy consumption forecasting, real-time data
+analytics, and optimized layout system [106]
+AI Predict mechanical failures
+and remaining useful life
+Visual recognition of quality detection and machine learning algorithms,
+data-driven methods, model-based prognostics, tool wear prediction,
+prognostics, and health management [14]
+Int J Adv Manuf Technol (2019) 103:3751–3768 3757
+interconnection, information transparency, decentralized decisions, technical assistance, interoperability, virtualization,
+real-time capability, service orientation, and modularity.
+Dmitry Ivanova et al. [115] proposed the dynamic model
+and an algorithm for short-term supply chain scheduling in
+the smart factory Industry 4.0. Zhang et al. [116] gave the
+review of job shop scheduling under Industry 4.0.
+Smart manufacturing systems are based on the emerging
+technologies such as IIoTs/IoTs, CPS, Big Data, Cloud/Cloud
+Computing, and AI, which have the advantage of the organization, information, and technology from awareness of the
+business knowledge to real-time optimization KPIs.
+Sustainable products and services make SMSs reengineer
+their business model to be smarter, and achieve co-creation
+value for related stakeholders. Table 3 gives the status and
+levels of business requirements in SMSs based on ISA95.
+4 Components of SMSs
+This section seeks to outline the components of SMSs not
+only according to the existing literature and studies on a conceptual framework/reference architecture of SMSs, but also
+integrating the objective and requirements of SMSs. Cyber
+physical production systems comprise smart machines,
+warehousing systems, and production facilities that have been
+developed and featured by integration of inbound logistics to
+production, marketing, outbound logistics, and service based
+on end-to-end information communication technology (ICT)
+[61]. The main components of smart factory were concluded
+into eight aspects, such as sensor, robot, smart product, machine tools, etc. [129]. This paper focuses on the taxonomy of
+the three levels of SMSs according to Industry 4.0, Industry
+Internet of Things, and Industrial Value Chain Initiative. The
+status and level of components in SMSs are concluded in
+Table 4.
+4.1 Physical level
+The basic requirements of SMSs are the physical levels (as
+Fig. 3) including multi-agent and smart cells. The smart cells
+are equipped with sensors, actuators, and communication
+technology, including robotic, smart machine, smart meter,
+and other infrastructures, and they can connect each other by
+smart modules. Embedding the Wi-Fi, Bluetooth module, or
+other sensing module and communication module into equipments and vehicles makes the production elements smarter,
+such as self-adaptive of the processing temperature, online
+quality control, and so on. Intelligent monitoring, intelligent
+decision, and intelligent operation are the three aspects of the
+smart device, smart software, and smart operation systems.
+Edge integrated plant assets and self-aware (via sensors) of
+their state [142]. Intelligent tracking in the supply chain uses
+the wireless options such as RFID and GPS [143] which can
+track the materials and product travel in internal and external
+of the entire plant. It supplies accurate information and a visual experience to the related stakeholders.
+The attributes of physical levels are reconfigurability,
+adaptability, usability, autonomy, and interconnect ability. Under the smart attribute of physical level, smart
+manufacturing systems can be connected and evolved
+by itself.
+4.2 Smart interconnection and communication level
+Interconnection and communication levels (shown as Fig. 4)
+including smart connection method are the media level between the application (cyber level) and physical layer. Smart
+connection and communication technologies let manufacturing achieve the physical connection by using low energy and
+high efficiency communication network, including collaboration, standards, and security. IoTs, Internet of People (IoP),
+Internet of Everything (IoE), and wireless communication
+Table 2 (continued)
+Tech. Characteristic Solving questions, application benefits, and limitations
+Cross-media reasoning, swarm intelligence, intensive deep learning, and
+human machine hybrid augmented intelligence are used in autonomy
+for smart manufacturing [42]
+AR Sharing knowledge Supports quicker product and process design; applied in control and
+maintenance activities [107]
+VR Improve user satisfy 3D visualization, immersive experience, and virtual ergonomics are widely
+used in design of systems-products in production [108, 109]
+3D Printing Print-on-demand, easy to
+maintain and deploy
+3D printing is a business innovation for industrial manufacturer; however,
+there are some limitation in usable materials, time-consuming 3D object
+design, low productivity, and low precision [110]
+Blockchain Immutability, Anti-counterfeiting Blockchain technology is used in the supply chain to enhance transparency
+and traceability [111], and additive manufacturing for enhancing
+anti-counterfeiting measures [112]
+3758 Int J Adv Manuf Technol (2019) 103:3751–3768
+technologies make machines, devices, sensors, and people
+connected. Core components layer contain WSNs, IPV6,
+Wi-Fi, WPAN, W-Mesh, WLAN, WWAN, IPV6, 4G/5G,
+NB-IoT, Bluetooth, Zigbee, RFID, GPS, etc.
+The attributes of interconnection levels include real-time,
+synchronized integrated networks of RFIDs and WSNs merging IoT into enterprise systems and business. The smart factory and smart workshop can be easily achieved by the communication technology.
+4.3 Application level
+Smart manufacturing systems are integrated with the hardware
+and software, connected with the physical world and cyber
+world to construct the holographic, transparent, autonomous,
+evolving, and openness platform. It corresponds to the contents mentioned above, such as cloud-based simulation, intelligent decision making, health management of intelligent devices, prediction analysis and precise decision making based
+on large data, etc. Autonomous SMSs are proposed by adequately using human wisdom and the advanced sensor, data
+dispatch, knowledge iteration, and the renewal technology for
+manufacturing systems. For these trends, the manufacturing
+problems can be solved by these new technologies. For example, Park and Tran [8] highlighted the equipping of the entities
+in the manufacturing system with the decision making and
+self-controlling abilities. Kaestle et al. [144] apply the onboard hardware of an autonomous and smart workpiece carrier in cyber physical electronics production. Autonomous operation provides an effective way to realize stakeholders’ value as follows:
+& Supply the visual order system, traceable product quality
+information, and accurate service to customer;
+& Supply the real-time production information sharing, uniform supply chain communication platform, sharing the
+production scheduling to supplier;
+& Supply the job instruction, resource pull, active error
+proofing, and real-time performance to employee;
+& Supply long cycle operation comprehensive data, index
+data of each functional operation, perform operational data
+on site to Manager;
+& Supply the real-time three wastes discharge information,
+real-time information interaction platform to other
+stakeholders.
+The attributes of application level of SMSs include visualization, cognitive ability, adaptability, self-organizing ability,
+self-healing ability, self-optimization, resiliency, and selfdecision ability.
+Table 3 Status and levels of business requirements in SMSs based on ISA95
+Business Classification Current situation and limitations
+Business planning
+& logistics (level 4)
+Plant production scheduling The concepts, methods, and technologies of cognitive planning, cognitive
+control, and cognitive operation for production systems are proposed [117]
+Decision making method is proposed, which is based on energy integrated
+production scheduling to optimize performance such as the production
+throughput, cost, and energy consumption [118]
+Supply management Optimization supply chain and manufacturing planning in chemical
+industry [119]
+Smart storage Causal link assessment is used in the industrial chemical plant diagnosis
+under little or no data on fault conditions [120]
+Operations managements
+(level 3)
+Production tracking Advanced process control: Big data applied in SMSs detect the anomaly,
+and predictive maintenance using method such as partial least squares
+supports vector machines [16]
+Smart MES Design the Smart MES to solve the data synchronization and application
+collaboration adoption of real-time communication environment [121]
+Under the dynamically changing, process parameters are reined and
+defined through model-based engineering and DMAIC, MAPEK [122]
+Real-time diagnosis Resource failures frequently occur in SM information system [123].
+Based on the causal link assessment for real-time diagnosis in
+chemical process [120]
+Control (level 0, 1, 2) Smart infrastructure Information communication technology (ICT) and infrastructure
+(RFID, sensor) develop the cloud-based Smart machining systems [8].
+Integrating the big data and Cloud Computing technology is proposed
+in an article [124] used in a semiconductor company in Taiwan
+Ubiquitous robotic Ubiquitous robotic systems and cloud robotics used in SMSs [125, 126]
+[127] provide a new task execution and resource sharing
+Smart sensor and connection Reflective-type optical sensor used in the online real-time measurement
+[128]. Applying the RFID and wireless facilities to construct intelligent logistics [87]
+Int J Adv Manuf Technol (2019) 103:3751–3768 3759
+5 Research challenges and future perspective
+In the past 5 years researches, the hot terms of Industry 4.0,
+Cyber Physical systems, Big Data, Cloud/Cloud Computing
+Manufacturing, and Internet of Things are promoting a new
+manufacturing paradigm, smart manufacturing systems. It is
+broadly accepted that SMSs provide much effective production, agility, sustainability, globalization, and customization.
+Based on the previous research, we conclude some key challenges to address in the following:
+& Smart manufacturing systems involve real-time acquisition of multiple resources and information across regions.
+How to realize autonomous real-time perception of information across regions has become the primary issue of
+research.
+& Real-time collaborative optimization of multiple subsystems is involved in the activity cycle of SMSs. How to
+achieve real-time collaborative optimization among subsystems has become a major problem.
+& With the dynamic change of demand, how to quickly respond to demand, adapt to demand, and organize the related tasks of SMSs has become a major
+challenge.
+& In view of the pressure of cost reduction, high efficiency,
+high quality, and diversification are being faced by SMSs;
+how to realize the precise organization and autonomous
+execution of manufacturing activities needs to be further
+studied.
+& An integrated autonomous evolution mechanism of SMSs
+needs to be proposed to solve requirements, function, and
+business requirements questions in the future work.
+Based on the above-mentioned challenges, mapping
+SMSs’ requirements to future perspective is shown in Table 5.
+However, the potential economic benefits of SMSs may
+offset with a few major challenges. In the Industry 4.0, autonomous, and AI 2.0 era, the traditional manufacturing systems
+need to transform to SMSs. There is a lack of the autonomous
+evolution mechanism and autonomous scheme of SMSs to
+solve the challenges. In the future, the KPIs of SMSs will
+automatically decomposed into sub-KPIs, achieved by autonomous evolution mechanism and autonomy scheme. The autonomous smart manufacturing systems are inspired by machine learning in which the KPIs and dynamic requirements
+are input data, and the smart manufacturing scheme is the
+target. By training, the autonomous SMSs can learn the
+weights of different parameters and will have the ability of
+outputting autonomous scheme intelligently. Inspired by the
+autonomous systems and computer system, SMSs can autonomously output the solution based on dynamic requirements
+and KPIs in the future as shown in Fig. 5.
+5.1 Autonomous evolution mechanism for SMSs
+The performance of SMSs is completely autonomous achieved
+through the autonomous evolution mechanism to suit the multiobjective optimization and dynamic environmental change.
+Table 4 Status and level of components in SMSs
+Components of SMSs Classification Related contents
+Physical level Smart machine, smart storage,
+and communication device
+Smart machine, smart product, storage and communication device, sensor parts:
+multi-robot, smart robotic [130], autonomous mobile platforms, and automated
+guided vehicles are used in assembly line and workshop [131]
+Smart logistic Intelligent AGV (automated guided vehicle) can be used to optimize path based on
+capability, cost, and time [132]
+Smart connection and
+communication level
+Local network, CPS, RFID Wireless connects all equipment in smart shop flow [133]; data acquisition and
+transmission are achieved by the sensor network [134]; 5G wireless communication is
+used in SMSs scenarios based on massive machine type communication, ultra-reliable
+and low latency communication, and enhanced mobile broadband [135]
+Industrial IoTs To solve the real-time collaboration and interconnection between enterprises and
+factories across regions, more enterprise adopt the IPV6 to realize the link-local and
+global [136]
+Application level Product lifecycle management Simulation and optimize design, product service, in the cloud SMSs platform to supply
+continuous value [67]
+Smart production system Process virtualization, real-time monitoring, self-organizing production activities, and
+energy optimization virtual enterprise make real-time engineering decisions and
+virtual inspection of the production [137, 138]
+Real-time simulation scheduling system is proposed in an article [139], which is based
+on cloud to help the user access to the mobile device
+Smart business management Data-driven simulation as predictive in SMSs to realize optimization management [140].
+As smart decision maker to quickly make precise resolution [141]
+3760 Int J Adv Manuf Technol (2019) 103:3751–3768
+The autonomous evolution mechanism of SMSs is realized by
+encapsulating the machine learning, mathematical algorithm,
+production engineering, lean management, and other technologies with other methods under the multidisciplinary fusion to
+get the optimizing KPIs. For example, autonomous evolution
+mechanism is a black box of the operators, including the sensing of the customers’ requirements and internal operation of
+SMSs. The autonomous evolution mechanism focuses on
+modularity, progressive construction, and real-time adaptation
+to change the environment. Yan Lu et al. [145] describe SMSs
+as the manufacturing ecosystems, where the components are as
+different as the individuals. We proposed the autonomous evolution mechanism of SMSs based on the multilevel Darwinist
+brain [146]. Autonomous evolution mechanism of SMSs design refers to the bio autonomous mechanism [147]. The mathematical algorithm of SMSs is drawn on the experience of the
+Robotics 
+Sensor 
+parts 
+Smart machine 
+Smart logistics 
+equipment
+Mobile equipment
+Display screen Storage and
+communication
+device
+Fig. 3 Physical layer of SMSs
+Smart workshop
+Smart factory 
+Smart factory 1
+Smart factory 2 
+Smart factory N
+Smart workshop
+Smart workshop
+Smart 
+workshop
+Local smart 
+connection
+Local smart 
+connection
+Fig. 4 Smart interconnection and
+communication layer of SMSs
+Int J Adv Manuf Technol (2019) 103:3751–3768 3761
+bio evolving principle. Therefore, we proposed the autonomous
+evolution mechanism of SMSs based on multilevel Darwinist
+brain as shown in Fig. 6.
+5.2 Autonomous scheme for SMSs
+The future autonomous scheme with hierarchical architecture
+integrates the business, technologies, and autonomous function requirements of SMSs into an evolvable autonomous
+platform. Structure of autonomous scheme is inspired by the
+Intelligent Control System of Hierarchical Architecture
+(ICSHA) [148], which combined intelligent control aiming
+for SMSs’ actives and smart elements. The hierarchical architecture of SMSs’ autonomous scheme can be the guidelines
+for the manufacturer, which contains the smart planning
+scheme, smart execution scheme, and smart control scheme.
+Under the individual customization environment, the artificial
+immune algorithm and evolutionary fuzzy recursive neural
+network (EFRNN) [149] algorithm are used in the reorganization autonomous scheme with dynamic demands and KPIs.
+Figure 7 shows the hierarchical architecture of SMSs’ autonomous scheme driven by objective. The autonomous scheme
+is as follows:
+& Smart control layer: it aims to accomplish the customized
+production and full utilization of equipment and resources through efficiently organizing manufacturing
+resource and basic smart cells (smart robotics, human, AGV, etc.). Under the sub-KPIs, the autonomy
+scheme of smart control layer was achieved by big
+data, iQGA (an improved Quantum-inspired Genetic
+Algorithm) [150], multi-rule and other intelligent
+algorithm.
+& Smart execution layer: it aims to better realize the smart
+execution sub-KPIs getting from the smart planning layer,
+including the quality ratio, availability, effectiveness,
+planned runtime per item, etc. based on the ISO-22400
+standard [151]. Smart execution layer is the bridge of the
+bottom layer and the top layer achieving multi-objective
+collaboration and optimization.
+Dynamic Requirement KPIs
+Requirement Scheme 
+KPIs
+Autonomous evolution mechanism 
+Autonomous scheme 
+Planning 
+Traditional manufacturing systems 
+Execution Control 
+Autonomous SMSs
+Self-decision Self-organization 
+ Algorithm Rules 
+Self-sensing Self-adaptive 
+Smart 
+planning 
+Smart 
+execution 
+Smart 
+control 
+Task Subtask Actor 
+Feedback 
+Control 
+Fig. 5 Directions of smart
+manufacturing systems
+Table 5 Mapping SMSs
+requirements to future perspective Currents researches Future perspective
+Objective Objective are mapped to the adaptive the dynamic requirements
+& KPIs of SMSs
+Functional requirements Autonomous evolution mechanism integrates the self-sensing,
+self-adaptive, self-organizing, and self-deciding function,
+achieved by the artifice algorithm and rules to realize self-optimization
+of the SMSs activities based on the KPIs and dynamic requirements
+Business requirements Business requirements are mapped to autonomous scheme, including
+smart planning layer, smart execution layer, and smart control layer
+Technologies requirements Autonomous SMSs are realized through integrating all emerging
+technologies into autonomous evolution mechanism and
+autonomous schemes
+Components The components are mapped to autonomous evolution mechanism
+and autonomous scheme, and are driven by the dynamic
+requirements and KPIs in the future
+3762 Int J Adv Manuf Technol (2019) 103:3751–3768
+& Smart planning layer: it aims to realize the smart planning
+KPIs, including sustainable value added, and win-win
+partnership, through the evolutionary fuzzy recursive neural network algorithm and optimize SMSs’ historical
+KPIs. Based on the dynamic requirements, KPIs are
+decomposed into sub-KPIs for smart execution layer.
+6 Conclusion
+In the AI and IoTs era, the SMSs have been focused by government, enterprise, institution, and scholar. This paper
+reviewed the last 5 years’ articles more focusing on the objective, requirements, and components of SMSs. Through this
+study, we want to help more traditional manufacturing enterprises to achieve intelligent transformation through checking
+the basic requirements and existing autonomous functions of
+their own. Meanwhile, we gave the future perspective of autonomous SMSs for the enterprise, which had adequate digitalization and intelligent foundation. Therefore, we summarized this paper from two aspects: the basic requirements of
+SMSs and the future perspective of SMSs autonomy.
+6.1 The contributions of this paper can be concluded
+as follows
+1. Basic requirements of SMSs
+Objective requirements: the design of smart manufacturing
+systems need to consider the requirements of performance,
+requirements of smart business and operation, requirements
+of functions and technologies, requirements of components,
+and research challenges.
+& Autonomous lean operation
+& Sustainable value business model
+& Win-win partnership development for related stakeholder
+Functional requirements: a comprehensive review of autonomous function of SMSs was concluded into four levels to
+better use the data, information, knowledge, and wisdom/value. The overall autonomous function was realized based on
+the emerging technologies. Autonomous SMSs integrated the
+advanced technology, soft technology, and information communication technology and information operation technology,
+to achieve autonomous optimization and autonomous
+operation.
+& Data, information sensing capability
+& Deal with dynamic challenge capability
+& Optimization, load balance capability
+& Predictive and prognostics capability
+Technologies requirements: Emerging technologies used in
+SMSs not only refer to product lifecycle management, but also
+refer to autonomous system, which integrates AI and evolution leaning method to satisfy SMSs self-evolution. The future
+of smart manufacturing systems needs to allocate dynamic
+demand tasks based on key performance indicators.
+& Advanced manufacturing technologies
+& Computing and predictive capacities
+& Communication and interoperability
+& Safety and security technologies support
+Business requirements help the enterprise better achieve the
+strategic target from the top-down method. It integrated the
+SMSs Activities 
+Satisfaction models 
+SMSs activities 
+Internal models 
+SMSs Activities 
+world models 
+Sensing Acting 
+SMSs
+Activities 
+Current 
+action 
+Big data 
+Real-time data 
+SMSs Activities 
+World models 
+learning 
+SMSs Activities 
+Internal models 
+learning 
+SMSs Activities 
+Satisfaction 
+models learning 
+SMSs Activities 
+Current world model
+SMSs activities 
+Current internal 
+model
+SMSs Activities 
+Current satisfaction 
+model
+AS- Action optimization 
+Environment 
+Self -sensing 
+Self-decision
+Self-organization Self-adaptive 
+Fig. 6 Based on multilevel Darwinist brain of SMSs’ autonomous evolution mechanism
+Int J Adv Manuf Technol (2019) 103:3751–3768 3763
+objective, function, and technologies to design their business
+in SMSs collaboration platform through the information
+flow and data stream to enhance the enterprise operation, sharing resource and real-time stakeholder
+cooperation.
+& Smart business planning and logistics
+& Operations managements
+& Smart control
+Components of SMSs are completely integrating objective,
+function, technology, and business of SMSs. Based on attributes, function, and application perspective, we concluded
+SMSs into three levels.
+& Physical components of SMSs contain the basic construction elements and smart elements
+& Smart communication and interconnection level realize
+real-time collaboration, interoperability, and globalization
+of SMSs
+& Application layer achieves virtualization, convenience,
+prediction, optimization, and win-win ecosystem.
+2. Future perspective and autonomous SMSs paradigm
+The authors provide a direction of autonomous SMSs driven by KPIs, which can be autonomically divided into subindicators at different level. The autonomous SMSs involve
+two parts: an autonomous evolution mechanism and an autonomous scheme that are worth discussing together.
+Of course, implementation of autonomy SMSs is inseparable from the joint efforts of important and appropriate hightech, intelligent equipment, intelligent communication, intelligent management, personnel, funds, and all stakeholders. In
+EFRNN 
+Algorithm
+KPIs
+Sub-KPIs 1
+Sub-KPIs 2
+Sub-KPIs N
+Smart planning 
+layer 
+Scheduling 
+Agenda 
+Sub-KPIs 1
+Sub-KPIs 2
+Sub-KPIs N
+Smart execution layer 
+Memory 
+iQGA
+Rule 
+generator 
+Smart control layer 
+Exploration 
+process 
+qAdaptor 
+New 
+actions
+New 
+rules 
+Rule-Based 
+controller Percepter 
+Worker 
+Smart 
+equipment 
+Smart logistic 
+Smart meter 
+RFID
+Implementing 
+Schedule
+Sub-KPIs
+Multi-Rule 
+Base
+Robotics 
+Update Control 
+rules Satisfactory 
+(sensory information )
+Actions Events 
+SubKPIs i has been 
+Unsatisfactory 
+completely executed 
+Big data, Cloud computing, Cloud platform 
+(Fault diagnosis and forecast, design real-time optimization, cluster optimization, 
+energy optimization, resource optimization, production optimization, etc. )
+Smart cells 
+IoTs, CPS 
+3D printer 
+AR/VR
+EFRNN 
+Algorithm
+KPIs
+Sub-KPIs 1
+Sub-KPIs 2
+Sub-KPIs N
+Smart planning 
+layer 
+Scheduling 
+Agenda 
+Sub-KPIs 1
+Sub-KPIs 2
+Sub-KPIs N
+Smart execution layer 
+Memory 
+iQGA
+Rule 
+generator 
+Smart control layer 
+Exploration 
+process 
+qAdaptor 
+New 
+actions
+New 
+rules 
+Rule-Based 
+controller Percepter 
+Worker 
+Smart 
+equipment 
+Smart logistic 
+Smart meter 
+RFID
+Implementing 
+Schedule
+Sub-KPIs
+Multi-Rule 
+Base
+Robotics 
+Update Control 
+rules Satisfactory 
+(sensory information )
+Actions Events 
+SubKPIs i has been 
+Unsatisfactory 
+completely executed 
+Big data, Cloud computing, Cloud platform 
+(Fault diagnosis and forecast, design real-time optimization, cluster optimization, 
+energy optimization, resource optimization, production optimization, etc. )
+Smart cells 
+IoTs, CPS 
+3D printer 
+AR/VR
+Fig. 7 Hierarchical architecture
+of SMSs’ autonomous scheme
+3764 Int J Adv Manuf Technol (2019) 103:3751–3768
+future work, this autonomous evolution mechanism and autonomous scheme are worthy to be applied in real discrete
+manufacturing industry.
+Acknowledgements The authors appreciate the editor and anonymous
+reviewers for their helpful comments and suggestions on this article.
+The author would like to thank the Shanghai Institute of Producer
+Service Development (SIPSD), Shanghai Research Centre for industrial
+Informatics (SRCI2), and National Natural Science Foundation of China
+(Grant No. 71632008) for the funding support to this research.

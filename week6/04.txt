@@ -1,0 +1,757 @@
+From Intelligent Manufacturing to Smart 
+Manufacturing for Industry 4.0 Driven by Next 
+Generation Artificial Intelligence and Further On* 
+Xifan Yao, Jiajun Zhou, Jiangming Zhang 
+School of Mechanical and Automotive Engineering 
+South China University of Technology 
+Guangzhou, Guangdong, China 
+mexfyao@scut.edu.cn
+Claudio R. Boër 
+University of Applied Sciences and Arts of Southern 
+Switzerland 
+Manno, Switzerland
+claudio.boer@supsi.ch
+Abstract—Smart manufacturing (SM) is emerging as a new 
+version of intelligent manufacturing (IM), reflecting the 
+magnitude and impact of smart technologies such the Internet of 
+Things, Cloud Computing, Cyber-Physical Systems and Big Data 
+on Industry 4.0. This paper addresses how IM evolves to SM 
+along with artificial intelligence (AI) evolution. To this end, this 
+study first summarizes how the symbolic AI (called AI 1.0) 
+characterized by structured contents and centralized control 
+structures evolves into the next-generation AI (called AI 2.0) 
+characterized by unstructured contents, decentralized control 
+structures and machine learning (especially deep learning), and 
+explain show IM enabled by AI 1.0 evolves into SM by AI 2.0 
+accordingly. Then, the comparison of IM and SM is discussed in 
+detail. Finally, the further development of smart manufacturing 
+for Industry 4.0 is given. 
+Keywords—Artificial intelligence; intelligent manufacturing; 
+smart manufacturing; cyber-physical system; social-cyber-physical 
+system; big data; Industry 4.0 
+I. INTRODUCTION
+Big Data has become an emerging field of AI (Artificial 
+intelligence) for both academic and industrial communities 
+over the past years. More specifically, Chen et al. divided the 
+development of business intelligence and analytics (BI&A) 
+into 3 stages: the first centered on DBMS (database 
+management systems)-based structured content, called BI&A 
+1.0, the second on text and web analytics for unstructured web 
+content, called BI&A 2.0, and the third on mobile and sensorbased content, called BI&A 3.0 [1]. The amount of data 
+generated continues to grow exponentially along with the 
+digitalization of and use of the Internet of Things (IoT) in 
+factories, and manufacturing is identified as one of the five 
+domains in which Big Data has transformative potential [2].
+Meanwhile, emerging is a new manufacturing model, 
+called smart manufacturing, which attracts a huge amount of 
+interest in both academic and industrial communities. The 
+Smart Manufacturing Leadership Coalition (SMLC) defined it 
+as "the intensified application of advanced intelligence 
+systems to enable rapid manufacturing of new products, 
+dynamic response to product demand, and real-time 
+optimization of manufacturing production and supply-chain 
+networks"[3].
+As we know, there has existed so-called intelligent 
+manufacturing (IM), which can be viewed as the 
+implementation of AI in manufacturing. Then, what 
+relationship exists between SM and IM as well as Big Data 
+and AI? How do they evolve? This paper will try to answer 
+these questions with aims to clarify SM and IM by addressing 
+the current state of manufacturing intelligence/smart 
+pertaining to next-generation AI, and to identify fields where 
+intended efforts should be put on the next-generation 
+intelligent manufacturing--smart manufacturing. 
+II. AI EVOLUTION
+Since AI was coined in 1956, the field of AI went through 
+ups and downs in the ensuing decades, and experienced two 
+major winters in 1974–80 and 1987–93 [4]. AI, can be roughly 
+classified into symbolic and sub-symbolic approaches (e.g., 
+neural networks, fuzzy sets, and evolutionary algorithms).
+At the first wave, in the 1960s symbolic intelligence had 
+won tremendous success at mimicking high-level thinking in 
+small demo programs for solving "toy problems". Meanwhile, 
+approaches based on neural networks or cybernetics were 
+given up or pushed into the background [5]. Especially, the 
+abandonment of connectionism in 1969 when Minsky and 
+Papert published the book Perceptrons that outlined the limits 
+of perceptrons [6], the large decrease in AI research in 
+response to the Lighthill Report of 1973, and DARPA's 
+funding cuts of the early 1970s, led AI to enter the first winter 
+in 1974–80 [4]. 
+In 1980s, expert systems (ESs) or knowledge-based 
+systems (KBSs) got big success, in which there were 
+knowledge bases that involve high-level, domain knowledge 
+extracted from experts and expressed in specific structured 
+formats. Applications were developed also in manufacturing 
+[7] to solve complex problems of machine programming with 
+multiple tools working simultaneously on the same workpiece. 
+Such a need led to the emergence of knowledge 
+engineering/knowledge representation that is central to classic 
+AI research. Meanwhile, the "winter" of connectionist 
+*Project supported by the National Natural Science Foundation of China
+(51175187, 51675186), the Science & Technology Foundation of Guangdong 
+Province (2016B090918035), and the Science & Technology Program of 
+Nansha, Guangzhou (2015CX005)..
+2017 5th International Conference on Enterprise Systems
+2572-6609/17 $31.00 © 2017 IEEE
+DOI 10.1109/ES.2017.58
+311
+Authorized licensed use limited to: NATIONAL TAIWAN NORMAL UNIVERSITY. Downloaded on January 20,2023 at 14:03:03 UTC from IEEE Xplore. Restrictions apply.
+research came to an end in the middle 1980s, when the work 
+of Hopfield, Rumelhart and others revived large scale interest 
+in neural networks. Thus, sub-symbolic approaches without 
+specific representations of knowledge, e.g. neural networks 
+(NNs), fuzzy sets, statistical and genetic algorithms (GA), 
+began to get researchers' attention. As a result, sub-symbolic 
+methods came into AI systems. Unfortunately, the second AI 
+winter was triggered by the breakdown of the Lisp machine 
+market in 1987, the revocation of new expenditure on AI by 
+the Strategic Computing Initiative in 1988, the fizzle of the 
+fifth generation computers, and the fall of expert systems in 
+the early 1990s [4].
+In the 1990s, distributed AI (DAI) got increasingly focused 
+along with the emergence of multi agents (MAs), which made 
+previous AI systems in centralized, hierarchical control 
+structures become flat, and substituted by a set of loosely 
+coupling agents collaborating with each other, interoperating 
+about messages and mutually learning from experience. 
+In the 2000s, Web 2.0, web services and web intelligence 
+emerged in AI systems. The prevalence of the Internet resulted 
+in large volumes of data available online. In addition, 
+individuals or organizations produce a great deal of structured 
+and unstructured data which are in need for processing. The 
+storing and processing of such large volume of data reflects a
+urgent need and a great challenge in mining, and processing 
+this data as knowledge [8].
+The on-going wave of interest for AI started around 2010, 
+promoted by three factors associated with each other [9]: the 
+sources of Big Data including e-commerce, social media, 
+research community, organization, and government; the 
+machine learning approaches and algorithms which have been 
+dramatically improved based on raw material provided by Big 
+Data; and the powerful computers which support the 
+computing of Big Data. 
+Such a disruptive progress is shifting the traditional AI 
+(called AI 1.0), which emphasized symbolic approaches 
+characterized by structured contents and centralized control 
+structures, to enter a new version, called Artificial Intelligence 
+2.0 (AI 2.0), which emphasizes machine learning (especially 
+deep learning) characterized by unstructured contents and decentralized (distributed) control structures. Figure 1 briefly 
+illustrates AI evolution from the perspective of content and 
+control: from AI 1.0 (Symbolic AI), through either DAI 
+(Distributed AI) called AI 1.5D or Web AI called AI 1.5W, to 
+AI 2.0. 
+In the process of AI evolution, there were more and more 
+sub-symbolic approaches were added into. Although neural 
+networks were revived in 1980s, AI was still dominated by 
+symbolic approaches at that time. Later, the integration of 
+conventional expert experience, artificial neural networks, 
+evolutionary algorithms and fuzzy sets in various 
+configuration resulted in the so-called hybrid expert systems. 
+Neural networks facilitated the process of knowledge gaining 
+in some extent by training patterns instead of loading rules. 
+Evolutionary algorithms were used as efficient tools for 
+addressing complicated practical engineering optimization 
+tasks such as production scheduling problems. In 2010s, deep 
+learning (DL) originated form neural networks has emerged, 
+which manages to approach intelligence from large amounts 
+of unstructured data such that overcomes, in some extent, the 
+symbolic AI bottleneck problem that depends on knowledge 
+extracting, which might be the most hard part of building an 
+expert system. Due to the diversity of AI approaches and 
+solutions, there is not a clear distinction between what AI 
+approaches are applied. For example, in fuzzy systems 
+knowledge is preserved in styles of symbolic feature, while 
+implemented as a neuron-like numerical procedure in neural 
+networks. And intelligent agents can use both symbolic and 
+sub-symbolic approaches. Therefore, between AI 1.0 and AI 
+2.0 as shown in Fig. 2(a), there is a transition, called 1.5X,
+which includes 1.5D and 1.5W as shown in Fig. 1. 
+Structured
+Distributed
+Symbolic
+1950-60s
+Agent
+1990s
+Sub-symbolic
+(NN/FL/GA)
+1980s
+Web2.0
+2000s
+DL
+Intelligent system
+Smart system
+IoT L
+IoS/Cloud
+Big data
+2010s
+AI 1.0
+AI 2.0
+AI 1.5D
+AI 1.5W
+Unstructured
+Centerlized
+DAI
+Web AI
+Content
+Configuration
+Fig. 1. AI evolution from the perspectives of content and control 
+AI 1.0 AI 2.0
+Symbolic
+Expert systems
+Big data
+1 computer,
+many users
+1 computer,
+1 user Many computers,
+1 user
+(a)
+(b)
+Symbolic domination
+xStructured contents
+xCentralized control architectures
+Sub-symbolic domination
+xUnstructured contents
+xDe-centralized control
+architectures
+AI 1.5X
+1960 1970 1980 1990 2000 2010 Time
+Agent Web
+DL
+For toy problems
+NN/FL/GA
+First winter
+x Abandonment of connectionism
+x Lighthill Report
+Second winter
+x Collapse of the Lisp machine market
+x Fall of expert systems
+First wave Second wave Third wave
+Things+clouds
+Things+clouds
+1960 1970 1980 1990 2000 2010 Time
+Fig. 2. AI evolution versus Computing's: (a) AI evolution; (b) Computing 
+evolution 
+As AI can be termed as a highly computerized system 
+whose behaviors require intelligence [9], computing evolution 
+as shown in Fig. 2 (b), also has big impact on AI. The first 
+312
+Authorized licensed use limited to: NATIONAL TAIWAN NORMAL UNIVERSITY. Downloaded on January 20,2023 at 14:03:03 UTC from IEEE Xplore. Restrictions apply.
+wave of computing began when mainframe computers were 
+used in 1950-60s to manage companies' operations. Then in 
+1980-90s, personal computers rose and carried over the jobs 
+such as expert systems that had been deployed in expensive 
+special-purpose machines, which might lead to a false 
+impression of the so-called "the fall of the Lisp machine 
+market" [10]. Now, in 2010s, we are entering a new age of the 
+IoT, cloud computing, pervasive computing or ubiquitous 
+computing, which results in the emergence of Big Data. There 
+is a need of new AI tools to collect and analyze such Big Data. 
+To summarize the above discussion, AI evolution is given 
+in Table I. 
+TABLE I. AI EVOLUTION
+Age 1950s -1960s 1980s 1990s 2000s 2010sAI Focus Symbolic Expert system &Sub-symbolic Agent Web Smart
+Computation Mainframes PCs PCs Networks Things+clouds
+Processing
+content/focus
+DBMS-based structured 
+content/ Knowledge 
+representation
+Computational intelligence/soft 
+computing/Data analytic &
+statistical methods
+Distributed 
+computing 
+intelligence
+Unstructured user created 
+content/Web analytics and 
+web intelligence 
+IoT- based big data/ 
+Context- aware analysis/
+Deep learning
+Control 
+structure
+Centralized Centralized Distributed Web-service based CPS-based distributed
+III. FROM INTELLIGENT MANUFACTURING TO SMART 
+MANUFACTURING ALONG AI EVOLUTION
+A. Intelligent manufacturing 
+For simplicity, intelligent manufacturing (IM) can be 
+viewed as the intersection of AI and manufacturing. Thus, IM 
+progresses along with the development of AI as shown in Fig. 
+3. In IM field, the first book, Manufacturing Intelligence, was 
+published in 1988 [11], and then we witnessed applications of 
+the methods, techniques and paradigms of AI in 
+manufacturing, resulting in the emergence of many specific 
+IM systems such as those in design, scheduling, production, 
+inspection, diagnosis, modeling, and control [12], during the 
+second AI waves shown in Fig. 2(a). 
+Structured
+Distributed
+Intelligent manufacturing
+(Systems enabled by AI 1.0)
+Smart manufacturing
+(Systems enabled by AI 2.0)
+Unstructured
+Centralized
+Distributed AI systems
+For example, Multi-agent
+systems
+Web AI systems
+For example, shopper
+recommendation systems
+Fig. 3. Intelligent manufacturing evolution along with AI
+There are research papers tackled with the implementation 
+of AI in manufacturing industry. For example, Teti and 
+Kumara [12] surveyed the relevant AI methods introduced in 
+manufacturing before 1997, and grouped them as follow:
+Knowledge-based/Expert systems (KBSs/ESs), Neural 
+Networks (NNs), Fuzzy Logic (FL), Multi Agents (MAs), and 
+others such as Evolutionary Algorithms and Simulated 
+Annealing (SA). The AI applications resulted in intelligent 
+components for CIM such as intelligent CAX (e.g. CAD, CAP, 
+CAM, and CAQ) as well as in intelligent robots [13]. In the 
+early years of intelligent manufacturing system (IMS) 
+development, KBSs/ESs had attracted much more attention, 
+and later NNs, case-based reasoning, GA and FL attracted 
+attention, too [14]. KBSs/ESs were introduced efficiently in 
+CIM components, while IMS was partially introduced in 
+industry but mainly for large companies [13]. The most 
+famous IMS research was the international scheme of joint 
+research, called Intelligent Manufacturing System found in 
+1995 and originally dated back to 1989 from Japan [15],
+whose members come from Japan, US, EU and other 
+industrial countries. 
+In 1990s, Agent-based systems for intelligent 
+manufacturing [16] had emerged, followed by web-services 
+based systems for manufacturing [17] as well as Enterprise 2.0 
+[18] and crowdsourcing [19] in 2000s. The agent-based 
+method seemed to be the potential solution as it offered a 
+proper paradigm for the intelligent CIM components and IMS, 
+and more detail can be seen in [20-22]. Intelligent agents are 
+used in distributed AI (DAI), and such an agent-based DAI 
+approach has the ability to handle the issues of the present 
+software applications, specifically those working conditions 
+that are highly dynamic and uncertain [23]. However, most 
+agent-based systems are still at a research and prototype stage 
+in labs and not widely adopted in manufacturing. 
+B. Smart manufacturing 
+In 2010s, instead of intelligent technologies (Symbolic AI) 
+in manufacturing, we are seeing a similar convergence of 
+"smart" technologies (called "smart AI" in contrast to 
+Symbolic AI) in manufacturing with the potential to radically 
+improve the management of manufacturing enterprises in the 
+product life cycle so as to provide more options for customers 
+[24], as shown in Fig. 3. 
+313
+Authorized licensed use limited to: NATIONAL TAIWAN NORMAL UNIVERSITY. Downloaded on January 20,2023 at 14:03:03 UTC from IEEE Xplore. Restrictions apply.
+The technologies used for the implementation of smart 
+manufacturing span a wide spectrum of domains, which are 
+initially referred as the IoT technologies [25], and then many 
+other related techniques such as Internet of Services (IoS), 
+Cyber-Physical Systems (CPS), Big Data, and advanced 
+robotics are added into. These smart technologies are taking 
+center stage in the second generation intelligent manufacturing 
+(IM 2.0.), i.e. smart manufacturing. The rise of IoT/CPS and 
+smart objects (phones) has made products become more 
+networked and accessible, from which the wealth of data 
+generated allows accurate targeting and further enabling 
+proactive management of enterprises through informed, timely, 
+in-depth decision execution [24]. Moreover, the fusion of 
+human, data and smart/intelligent algorithms has far-reaching 
+effects on manufacturing efficiency. 
+Of these smart terms, Big Data emphasizes data analysis,
+while CPS covers a larger scope compared to IoT or IoS, and 
+becomes increasingly important in manufacturing context [26]. 
+Figure 4 exemplifies smart manufacturing as a cyber-physical 
+production system, which is viewed as the combination of IoT
+and IoS. In the cyber space such as in cloud, manufacturing 
+related resources are virtualized and packaged as cloud 
+services that can be shared and utilized on demand via IoS. As
+there exists large amount of manufacturing services, and a
+single service usually cannot satisfy complicated task 
+requirements, it is necessary to solve such a so-called service 
+composition and optimal selection problem in order to form a 
+business process for manufacturing by using intelligent 
+optimization algorithms such as particle swarm optimization,
+differential evolution, and bee colony algorithm. Then the 
+optimized business process created in the cyber system is 
+delivered to the physical shop floor for execution by linking 
+each cloud manufacturing service (virtual machine) to its 
+corresponding physical machine. Meanwhile, the status in the 
+physical workshop is sensed via IoT to the cyber system to 
+track if the business process is fulfilled or not. 
+Internet of Things (IoT)
+Physical system
+Cyber system
+Virtual Machine 1
+Virtual Machine 2
+Virtual Machine ...
+Virtual Machine n
+Machine ...
+Internet of Services (IoS)
+Smart manufacturing
+(Cyber-physical production system)
+Machine 1
+Machine n
+Fig. 4. Smart manufacturing exemplified as a cyber-physical production 
+system 
+IV. COMPARISON OF IM AND SM
+The traditional IM systems are centralized in configuration 
+with structured contents such as in database, knowledge base, 
+intelligent CAD (ICAD), ICAP, and ICAM, and usually used 
+in departments of an enterprise on a relatively small scale. 
+Meanwhile, agent technology promotes distributed AI in 
+manufacturing. With the development of the Internet, 
+manufacturing enterprises have shifted to the Web to sell and 
+promote their products, which leads to the emergence of 
+unstructured data of social media. Later, advances in the 
+Internet of Things and Services, smart technologies are 
+becoming increasingly utilized by industry, which results in 
+the emergence of smart manufacturing, and makes enterprises 
+face the challenge of exponential growing Big Data. As such, 
+enterprises need to utilize Big Data related techniques for 
+predicting, proactive maintenance, and production.
+Nevertheless, such Big Data analytics is not available in 
+traditional, even in agent- or web- based manufacturing 
+systems, due to their limitation of data acquisition and 
+processing capabilities [27]. 
+As stated above, traditional IM is based on symbolic AI, 
+which seeks to integrate human experience and knowledge in
+manufacturing, usually extracted from experts in production.
+In traditional IM systems, human experience/knowledge is 
+expressed by the IF-THEN production systems or other 
+formatted ways (e.g., frames, objects, and semantic). However, 
+Big Data generated in SM is out of the processing capability 
+of traditional database systems and software tools. Thus, Big 
+Data analytics becomes critical to enterprises in order to turn 
+raw data to actionable information, and/or knowledge that 
+helps decision making [28].
+As shown in Fig. 5, IM is knowledge-based while SM is 
+data-driven and knowledge-enabled. Data and knowledge are 
+related in the hierarchy of Data, Information, Knowledge and 
+Wisdom (DIKW hierarchy). The emergence of "Big Data
+(analytics)" makes decision makers in enterprises shift their 
+focus from knowledge back to "data" [28]. Owing to huge data 
+volumes being processed, predictive models and decision 
+emerging there from are based on machine learning [28],
+especially deep learning, which can be used to abstract highlevel representations from large amounts of data [29]. 
+Interviews
+Intelligent manufacturing
+Smart manufacturing
+Expert system/
+Knowledgebased system
+End
+user
+Domain
+expert
+Tests
+Tests
+Builds Based on
+Modeling
+Learning
+Prediction
+Action
+Data
+Information
+Knowledge
+Wisdom
+DIKW
+ERP MES CRM
+Web
+IoT
+Driven
+by
+Smart
+AI
+Others
+(GA, NN,Ă)
+AI
+Cyber-physical production system
+Symbolic
+AI
+Knowledge
+engineer
+Fig. 5. Intelligent manufacturing versus smart manufacturing 
+314
+Authorized licensed use limited to: NATIONAL TAIWAN NORMAL UNIVERSITY. Downloaded on January 20,2023 at 14:03:03 UTC from IEEE Xplore. Restrictions apply.
+Therefore, in Big Data era, decision making is driven by 
+predictions - learning from data (experience) to predict, and 
+actions are taken in response to predictions [30]. Machine 
+learning, which learns from data and uses statistical 
+approaches to assist decision making that operates well in 
+practice, contrasts with the older "expert system" approach
+that aims to mimic the rules from human experts with the help 
+of programmers translating the explicit rules into software 
+code.
+Now, there is an increasing growing of literature on Big 
+Data in manufacturing as be seen from surveyed in the last 
+few years especially after 2012 [31]. There is a profound 
+distinct between Big Data and structured data in DBMS. Big 
+Data is unstructured large scale data sets that is hard to be 
+processed by traditional software tools within a tolerable 
+elapsed time [32], characterized by a high Volume, Velocity 
+and Variety to need new emerging approaches for its 
+conversion into Value [33]. Although BI&A is divided into 3 
+stages from the viewpoint of data structures/sources as stated 
+above, both BI&A 2.0 and 3.0 are related to Big Data, and 
+they differ only in the data sources. 
+As stated above, we address AI or intelligent 
+manufacturing in two stages. Before 2000 we usually referred 
+the application of AI in manufacturing as intelligent 
+manufacturing (IM), but now smart manufacturing is 
+increasingly used, instead, as next-generation manufacturing 
+model with the smart sensing and control techniques [34]. At 
+first, the smart factory was initially studied with the 
+application of IoT in production [35], and later becomes a key 
+part of Industry 4.0 (Industrie 4.0) [36]. Then, more and more 
+"smart" techniques such as the IoS, cloud computing, and CPS 
+were also introduced to the smart factory or smart 
+manufacturing [37].
+Now, the term "smart" involves the creation and use of 
+data throughout the entire product cycle for the purpose of 
+more flexible manufacturing processes that respond quickly to 
+on-demand changes at low cost without harming the 
+environment [38]. It is the introduction of those technologies 
+that makes manufacturing become "smart" and different from 
+the "older" intelligent manufacturing. Among those, IoT and 
+CPS are, in a sense, acronymous, both of which try to connect 
+the cyber world and the physical world, and result in large 
+scale data set - Big Data. SM's strength lies in implementing
+manufacturing intelligence (MI) from a comprehensive global
+viewpoint under the support of ICT technologies including
+IoT, IoS, CPS and Big Data that were not available previously.
+As such, Davis et al. defined SM as "the use of data-driven MI 
+in multiple real-time applications deployed throughout all 
+operating layers across the factory and supply chain" [39],
+and the future enterprise as "data driven, knowledge enabled,
+and model rich with visibility across the enterprise such that 
+all operating actions are executed proactively by applying the 
+best information and performance metrics" [34].
+Such ubiquitous use or access of mined information/ 
+knowledge out of Big Data throughout the entire product value 
+chain, from product lines to the demand-supply networks,
+supports new services and business models such as 
+"Everything-as-a-Service" and "Pay-per-use" as in cloudbased design and manufacturing [27]. So "Design-as-aService" and "Product-as-a-Service" can be accessible on
+demand. As such, we are entering the next-generation 
+intelligent manufacturing – smart manufacturing, in which 
+factories have the ability to sense, understand, think, and 
+respond to our needs. The comparison of IM and SM is given 
+in Table II, from which we can see that SM provides
+significantly more benefits than IM.
+TABLE II. THE COMPARISON OF IM AND SM
+Characteristics IM SM
+Structure Centralized Distributed
+Optimal scale Usually local Global
+Structured content (data)  
+Big data (unstructured 
+content)
+
+IoT/CPS 
+IoS/Cloud computing 
+Deep learning 
+Entire value chain support 
+Ubiquitous access 
+Virtualization 
+Everything-as-a-Service 
+Visibility 
+Proactivity 
+Adaptability 
+Self-organization 
+Self-predictiveness 
+Context-awareness 
+System of systems 
+V. FURTHER DEVELOPMENT OF SMART MANUFACTURING FOR 
+INDUSTRY 4.0 
+The term "Industry 4.0" originates from the high-tech 
+program of the German government, which derives from 
+"smart factories" [40]. Following the first Industrial 
+Revolution "Mechanization", the second "Mass production", 
+and the third "Automation", Industry 4.0 emerges through the 
+utilization of CPS, IoT and IoS [41, 42]. 
+Smart factories (manufacturing) and Industry 4.0 are 
+empowering each other, both often described in CPS 
+architectures [41, 43-46]. However, the CPS architecture is not 
+sufficient for Industry 4.0 or a manufacturing system, which is, 
+by its very nature, socio-technical. Similar to Industry 4.0 
+proposed by Germany, "Made in China 2025 Strategy" also 
+focuses on intelligent (smart) manufacturing [47]. Moreover, 
+there is an increasing need of customized/personalized 
+products and sustainable manufacturing [48], as well as the 
+emergence of Enterprise 2.0, socialized enterprises, 
+crowdsourcing, social manufacturing, and open innovation, so 
+social dimension should be as well considered in smart 
+manufacturing/smart factories/ Industry 4.0 [49], as illustrated 
+in Fig. 6. To meet such needs, wisdom manufacturing (or wise 
+manufacturing) in the form of social CPS (SCPS) was 
+proposed [50, 51].
+315
+Authorized licensed use limited to: NATIONAL TAIWAN NORMAL UNIVERSITY. Downloaded on January 20,2023 at 14:03:03 UTC from IEEE Xplore. Restrictions apply.
+The previous three industrial revolutions tried to promote 
+or focused on mass production, while Industry 4.0 focuses on 
+mass customization/personalization. Therefore, Industry 4.0 
+somehow represents a socio-technical revolution, converting 
+the previous technical revolution into a socio-technical one 
+through the introduction of smart manufacturing technologies 
+and the convergence with social intelligence and human 
+wisdom such as social computing, collective intelligence,
+crowdsourcing, and innovation. And SCPS-based 
+manufacturing can be viewed as the extension of CPS-based 
+manufacturing (including smart manufacturing and 3D 
+printing, which naturally revives craft production in the CPS 
+form) by adding the social dimension [49] , as shown in Fig. 6. 
+Time
+Pre-industrial
+revolutions
+~1780 ~2010
+Technical
+effects
+Social
+effects
+Smart manufacturing
+3D printing
+SCPS-based manufacturing
+(Wisdom manufacturing)
+CPS-based manufacturing
+Industry 1.0
+(Mechanization)
+Industry 2.0
+(Electrification)
+Industry 3.0
+(Automation)
+Productivity
+Industry 4.0
+(CPS/Wisdom)
+Volume per model
+Craft
+production
+Mass production
+Mass personalization
+Mass customization
+(a)
+(b)
+Time
+Fig. 6. Industry 4.0 as a social-technical revolution for producing 
+customized/personalized products. (a) Manufacturing paradigm shift; (b) 
+Industrial Revolutions 
+Wisdom manufacturing integrated IoT, IoS, Internet of 
+Contents and Knowledge (IoCK), and Internet of People (IoP)
+in manufacturing context [51]. IoCK can be seen as DIKW, 
+Internet of Knowledge, or Internet of data (Big Data). Thus, 
+IoT, IoS, IoCK, and IoP can grouped as IoTSKP (Internet of 
+Things, Services, Knowledge, and People). Most new 
+emerging manufacturing models focus on one or two aspects 
+of IoTSKP, for example, smart factory on IoT, cloud 
+manufacturing on IoS (cloud computing), Enterprise 2.0/ 
+crowdsourcing on IoP, predictive manufacturing on Big Data 
+[52], and CPS-based smart manufacturing [53]. Wisdom 
+manufacturing is such a model that integrates the ideas of 
+these emerging models together, as shown in Fig. 7. 
+The integration of IoT, IoS, and IoP in manufacturing 
+leads to the rapid rise of available data sets, with which 
+enterprises are overwhelmed. Big Data is what these emerging 
+manufacturing models have in common. On the one hand, Big 
+Data as data-intensive computing, provides us a new paradigm 
+beyond experimental and theoretical research and computer 
+simulations of natural phenomena [54] to rethink what it 
+means to AI or intelligent (smart) manufacturing. But on the 
+other hand, Big Data is considered as one of the greatest 
+challenges that 21st-century enterprises have to face. So it is 
+an urgently demand and predictive challenge to turn Big Data 
+into actionable information/knowledge for these emerging 
+manufacturing models. 
+Wisdom manufacturing
+(Socio-cyber-physical production system)
+Internet by and for people
+Internet of Contents and Knowledge
+Internet of Things
+Internet of Services
+Manufacturing Infrastructure IoS-enabled manufacturing (e.g., cloud manufacturing)
+IoT-enabled manufacturing
+(e. g. smart factory)
+IoP-enabled
+Enterprise 2.0/crowdsourcing
+IoCK-enabled manufacturing
+(e. g. predictive manufacturing)
+Cyber-physical production system
+(Smart manufacturing)
+Data
+Data
+Data
+Fig. 7. Wisdom manufacturing vs. other emerging manufacturing models 
+with big data in common 
+As shown in Fig. 8, SCPS-based manufacturing (wisdom 
+manufacturing) integrates the physical, cyber, and social 
+systems as a whole, which covers 6 semiotic levels - from 
+physical to social, and generates data from [55]: (1) the social 
+system that consists in the IoP including social media 
+networks, Web 2.0, crowdsourcing communities and mobiles; 
+(2) the cyber system that consists in the IoCK, and IoS
+including digitalization of manufacturing such as NC/CAD/ 
+CAM/CAE/CAPP/PDM/ERP, simulation, and virtual 
+manufacturing; and (3) the physical system that consists in the 
+IoT including sensors and smart objects. 
+Now, this is a trend to blend "symbolic" AI with "smart" 
+AI, which will result in hybrid AI called "wise" AI or 
+Artificial Wisdom. As such, AI evolves from "symbolic" (AI 
+1.0) to "smart" (AI 2.0), and further to "wise" (AI 3.0). In a 
+sense, AI 3.0 can be viewed as the combination of symbolic 
+AI, smart AI and others. Namely, we have " wise AI (AI 3.0) 
+= smart AI (AI 2.0) + symbolic AI (AI 1.0) + others".
+Similarly, manufacturing is evolving from intelligent to smart, 
+and will to wise (wisdom). 
+As the further development of smart manufacturing, wise 
+(wisdom ) manufacturing integrates not only symbolic AI and 
+smart technologies (smart AI) but also human 
+intelligence/wisdom in manufacturing, more specifically 
+integrating humans, computers and machines/things, 
+ubiquitous/artificial/collective intelligence, as well as human 
+knowledge/experience as a whole [50]. 
+316
+Authorized licensed use limited to: NATIONAL TAIWAN NORMAL UNIVERSITY. Downloaded on January 20,2023 at 14:03:03 UTC from IEEE Xplore. Restrictions apply.
+Social system Cyber system
+Internet of Contents and
+Knowledge
+Data generated from IoP,
+social media, and mobiles
+Information
+Data
+Knowledge
+Sensing Control
+Service discovery,
+composition &d provision
+Internet of Things (IoT)
+Internet of People (IoP) Internet of Services
+Physical system
+Data sources
+Information and
+knowledge/models
+extracted from big
+data/ Deep learning
+Big data Analytics Decision
+SOA
+Cloud
+Physical Empiric Syntatic Semantic Pragmatic Social
+Data generated from
+NC/CAD/CAM/CAE/PDM/ERP/Virtrual
+manufacturing/simulation
+Data generated from IoT
+Sensors, and Smart objects
+Decision
+making &
+control
+Ubiquitous/Pervasive computing
+Ubiquitous/Pervasive intelligence
+Explicit knowledge
+Cloud computing
+Intelligent algorithms
+Machine learning
+AI
+Tacit knowledge
+Knowledge sharing
+Social computing
+Open innovation
+Crowdsourcing
+Collective intelligence
+SCPS-based manufacturing (Wisdom manufacturing)
+CPS-based manufacturing (Smart manufacturing)
+Fig. 8. A framework for SCPS-based manufacturing 

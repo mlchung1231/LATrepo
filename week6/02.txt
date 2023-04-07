@@ -1,0 +1,773 @@
+REVIEW ARTICLE
+Pai ZHENG, Honghui WANG, Zhiqian SANG, Ray Y. ZHONG, Yongkui LIU, Chao LIU, Khamdi MUBAROK,
+Shiqiang YU, Xun XU
+Smart manufacturing systems for Industry 4.0: Conceptual
+framework, scenarios, and future perspectives
+© Higher Education Press and Springer-Verlag GmbH Germany, part of Springer Nature 2018
+Abstract Information and communication technology is
+undergoing rapid development, and many disruptive
+technologies, such as cloud computing, Internet of Things,
+big data, and artificial intelligence, have emerged. These
+technologies are permeating the manufacturing industry
+and enable the fusion of physical and virtual worlds
+through cyber-physical systems (CPS), which mark the
+advent of the fourth stage of industrial production (i.e.,
+Industry 4.0). The widespread application of CPS in
+manufacturing environments renders manufacturing systems increasingly smart. To advance research on the
+implementation of Industry 4.0, this study examines smart
+manufacturing systems for Industry 4.0. First, a conceptual
+framework of smart manufacturing systems for Industry
+4.0 is presented. Second, demonstrative scenarios that
+pertain to smart design, smart machining, smart control,
+smart monitoring, and smart scheduling, are presented.
+Key technologies and their possible applications to
+Industry 4.0 smart manufacturing systems are reviewed
+based on these demonstrative scenarios. Finally, challenges
+and future perspectives are identified and discussed.
+Keywords Industry 4.0, smart manufacturing systems,
+Internet of Things, cyber-physical systems, big data
+analytics, framework
+1 Introduction
+Information and communication technology (ICT) is
+currently undergoing rapid development. Many disruptive
+technologies, such as cloud computing, Internet of Things
+(IoT), big data analytics, and artificial intelligence, have
+emerged. These technologies are permeating the manufacturing industry and make it smart and capable of
+addressing current challenges, such as increasingly
+customized requirements, improved quality, and reduced
+time to market [1]. An increasing number of sensors are
+being used in equipment (e.g., machine tools) to enable
+these equipment to self-sense, self-act, and communicate
+with one another [2]. Through these technologies, realtime production data can be obtained and shared to
+facilitate rapid and accurate decision making. The
+connection of physical manufacturing equipment and
+devices over the Internet together with big data analytics
+in the digital world (e.g., the cloud) has resulted in the
+emergence of a revolutionary means of production,
+namely, cyber-physical production systems (CPPSs).
+CPPSs are a materialization of the general concept cyberphysical systems (CPS) in the manufacturing environment.
+The interconnection and interoperability of CPS entities in
+manufacturing shop floors together with analytics and
+knowledge learning methodology provide an intelligent
+decision support system [3]. The widespread application of
+CPS (or CPPS) has ushered in the fourth stage of industrial
+production, namely, Industry 4.0 [4].
+Industry 4.0 has elicited much interest from the industry
+and academe [5]. A recent literature survey identified the
+basic concept, perspectives, key technologies, and industrial applications of Industry 4.0 and examined its
+challenges and future research trends [6,7]. However, no
+work has established a systematic framework of smart
+manufacturing systems for Industry 4.0 that can guide
+academic research and industrial implementation. Motivated by this situation, this study proposes a conceptual
+framework for Industry 4.0 smart manufacturing systems.
+The framework covers a wide range of topics, including
+smart design, smart machining, smart monitoring, smart
+control, smart scheduling, and industrial implementation.
+A number of demonstrative scenarios are presented, and
+Received March 27, 2017; accepted September 27, 2017
+Pai ZHENG, Honghui WANG, Zhiqian SANG, Ray Y. ZHONG (✉),
+Yongkui LIU, Chao LIU, Khamdi MUBAROK, Shiqiang YU, Xun XU
+Department of Mechanical Engineering, University of Auckland,
+Auckland, New Zealand
+E-mail: r.zhong@auckland.ac.nz
+Front. Mech. Eng. 2018, 13(2): 137–150
+https://doi.org/10.1007/s11465-018-0499-5
+current challenges and future research directions are
+discussed.
+Although extensive effort continues to be exerted to
+make manufacturing systems smart, smart manufacturing
+systems do not have a widely accepted definition. In
+Industry 4.0, CPPSs can be regarded as smart manufacturing systems. CPPSs comprise smart machines, warehousing systems, and production facilities that have been
+developed digitally and feature end-to-end ICT-based
+integration from inbound logistics to production, marketing, outbound logistics, and service [3]. Smart manufacturing systems can generally be defined as fully integrated
+and collaborative manufacturing systems that respond in
+real time to meet the changing demands and conditions in
+factories and supply networks and satisfy varying customer
+needs [8]. Key enabling technologies for smart manufacturing systems include CPS, IoT, Internet of Services (IoS),
+cloud-based solutions, artificial intelligence (AI), and big
+data analytics.
+The rest of this paper is structured as follows. Section 2
+presents a framework for Industry 4.0 smart manufacturing
+systems. Section 3 provides several demonstrative scenarios.
+Section 4 discusses current challenges and future
+perspectives, and Section 5 presents the conclusions.
+2 Smart manufacturing systems for
+Industry 4.0
+The Industry 4.0 concept in the manufacturing sector
+covers a wide range of applications from product design to
+logistics. The role of mechatronics, a basic concept in
+manufacturing system design, has been modified to suit
+CPS [9]. Smart product design based on customized
+requirements that target individualized products has been
+proposed [10]. Predictive maintenance [11] and its
+application in machine health prognosis are popular topics
+in Industry 4.0-based CPS [12]. Machine Tools 4.0 as the
+next generation of machine tools has been introduced in
+machining sites [13]. Energy Management 4.0 has also
+been proposed for decision-based energy data and has
+transformed energy monitoring systems into autonomous
+systems with self-optimized energy use [14]. Moreover,
+the implication of Industry 4.0 technologies on logistic
+systems has been investigated [15]. The entire range of
+applications cannot be discussed in a single paper.
+Therefore, this paper only presents design, monitoring,
+machining, control, and scheduling applications.
+Figure 1 presents a framework of Industry 4.0 smart
+manufacturing systems. The horizontal axis shows typical
+Fig. 1 Conceptual framework of Industry 4.0 smart manufacturing systems
+138 Front. Mech. Eng. 2018, 13(2): 137–150
+issues in Industry 4.0, including smart design, smart
+machining, smart monitoring, smart control, smart scheduling, and industrial applications, which are the focus of
+this work. The vertical axis shows issues in another
+dimension of Industry 4.0 ranging from sensor and
+actuator deployment to data collection, data analysis, and
+decision making. In Industry 4.0, data gathering and
+analysis are the main sources of the smartness of activities
+shown on the horizontal axis.
+ Smart design. Traditional design has been upgraded
+and has become smart due to the rapid development of new
+technologies, such as virtual reality (VR) and augmented
+reality (AR). Hybrid prototyping using VR techniques has
+been introduced to additive manufacturing. Design software, such as computer-aided design (CAD) and computer-aided manufacturing (CAM), can now interact with
+smart physical prototype systems in real time via 3D
+printing integrated with CPS and AR [16]. Thus,
+engineering changes and physical realizations could be
+combined to achieve a smart design paradigm.
+ Smart machining. In Industry 4.0, smart machining
+can be achieved with the aid of smart robots and other
+types of smart objects that can sense and interact with one
+another in real time [17]. For example, CPS-enabled smart
+machine tools can capture real-time data and transfer them
+to a cloud-based central system so that machine tools and
+their twined services can be synchronized to provide smart
+manufacturing solutions. In addition, self-optimization
+control systems provide in-process quality control and
+eliminate the need for post-process quality inspection [18].
+ Smart monitoring. Monitoring is an important aspect
+in the operation, maintenance, and optimal scheduling of
+Industry 4.0 manufacturing systems [19]. The widespread
+deployment of various sensors has made smart monitoring
+possible. For example, data on various manufacturing
+objects, such as temperature, electricity consumption,
+vibrations, and speed, can be obtained in real time. Smart
+monitoring provides not only a graphical visualization of
+these data but also alerts when abnormality occurs in
+machines or tools [20,21]. CPS and IoT are key
+technologies that enable smart monitoring in Industry 4.0
+smart manufacturing systems.
+ Smart control. In Industry 4.0, high-resolution,
+adaptive production control (i.e., smart control) can be
+achieved by developing cyber-physical production control
+systems [22]. Smart control is mainly executed to manage
+various smart machines or tools physically through a
+cloud-enabled platform [23]. End users can switch off a
+machine or robot via their smartphones [24]. Decisions can
+then be timely reflected in frontline manufacturing sites,
+such as robot-based assembly lines or smart machines [25].
+ Smart scheduling. Smart scheduling mainly utilizes
+advanced models and algorithms to draw information from
+data captured by sensors. Data-driven techniques and
+advanced decision architecture can be used to perform
+smart scheduling. For example, distributed smart models
+that utilize a hierarchical interactive architecture can be
+used for reliable real-time scheduling and execution [26].
+Production behavior and procedures can then be carried
+out automatically and effectively because of the wellestablished structures and services. With the aid of data
+input mechanisms, the output resolutions are fed back to
+the parties involved in different ways [27].
+ Industrial applications. Industrial applications that
+target different industry implementations of various
+solutions are the ultimate goal of Industry 4.0 and may
+revolutionize manufacturing systems. The solutions provided by Industry 4.0 are sufficiently flexible to support
+customized configuration and development according to
+the uniqueness and specific requirements of several
+industries, such as the food industry that includes a large
+number of perishable products. Thus, dynamic manufacturing networks are provided opportunities to manage their
+supply and business modes [28]. With the support of
+configurable facilities from layers of smart design and
+manufacturing and smart decision making, applications
+can achieve a holistic perspective by considering practical
+concerns, such as production efficiency, logistics
+availability, time constraints, and multiple criteria [29].
+Several of the key research topics within this framework
+are summarized as follows.
+ Smart design and manufacturing. Research at this level
+encompasses smart design, smart prototyping, smart
+controllers, and smart sensors [30,31]. Real-time control
+and monitoring support the realization of smart manufacturing [32]. Supporting technologies include IoT, STEPNC, 3D printing, industrial robotics, and wireless communication [33].
+ Smart decision-making. Smart decision making is at
+the center of Industry 4.0. The ultimate goal of deploying
+widespread sensors is to achieve smart decision making
+through comprehensive data collection. The realization of
+smart decision making requires real-time information
+sharing and collaboration [34]. Big data and its analytics
+play an important role in smart decision-making tasks,
+such as data-driven modeling and data-enabled predictive
+maintenance [35]. Many technologies, including CPS, big
+data analytics, cloud computing, modeling, and simulation,
+contribute to the realization of smart decision making [36–
+38].
+ Big data analytics. CPS and IoT-based manufacturing
+systems involve the generation of vast amounts of data in
+Industry 4.0 [39], and big data analytics is crucial for the
+design and operations of manufacturing systems [41]. For
+example, by using the big data analytics approach, a
+holistic framework for data-driven risk assessment for
+industrial manufacturing systems has been presented based
+on real-time data [41]. Such a topic has been widely
+reported to support production optimization and manufacturing CPS visualization [42–44].
+ Industrial implementations. Industrial applications are
+the ultimate aim of Industry 4.0. Almost all industries,
+Pai ZHENG et al. Smart manufacturing systems for Industry 4.0 139
+including manufacturing, agriculture, information and
+media, service, logistics, and transportation, can benefit
+from the new industrial revolution. Many new opportunities will be available for industrial parties [45].
+Companies may focus on their core business values or
+challenges, which could be upgraded or addressed with
+Industry 4.0-enabled solutions.
+3 Demonstrative scenarios
+3.1 Smart design: User experience (UX)-based personalized
+smart wearable device
+ISO 9241-210 defines UX as “a person’s perceptions and
+responses resulting from the use and/or anticipated use of a
+product, system, or service” [46]. In the Industry 4.0
+environment, the two typical emerging tendencies in the
+product development stage are 1) customers become
+actively involved in the product design process to cocreate personalized products with improved UX and
+satisfaction, which is known as the manufacturing
+paradigm of mass personalization [47] and 2) products
+themselves become smart and able to communicate with
+other things in their lifecycle as defined in the IoT [48].
+Both aspects aim to improve UX during the product
+development stage. However, only a few studies have
+discussed the establishment of such a smart design for
+personalization. To bridge these gaps, this scenario
+provides a systematic means to develop a series of
+personalized wearable products by considering the aforementioned factors.
+The conceptual framework of the proposed co-creation
+model is shown in Fig. 2 (derived from Ref. [49]). It
+consists of physical, cyber, and UX layers. The physical
+layer stands for physical products (e.g., wrist band) and
+services (e.g., application (app) subscription), the cyber
+layer stands for web-based virtual co-design resources
+(e.g., CAD models and product configuration systems),
+and the UX layer stands for the cognitive and affective
+behaviors of users (e.g., feedback and emotions) during
+product development.
+Smart design adopts state-of-the-art design methodologies (e.g., adaptable design [50] and innovative design
+thinking [51]) to guide the user interactive conceptual
+design process. A product configuration system with a
+graphical user interface is also developed to enable the cocreation process. To prototype the personalized parts, 3D
+scanners are utilized to capture the specific features of a
+user, and the geometric parameters are optimized in CAD
+software for subsequent 3D printing. A smart sensor
+platform (e.g., Raspberry Pi [52]) is implemented in the
+prototyping product to test its smart functions (e.g., heart
+rate and breathing frequency) with apps in smart mobile
+devices. Sensor data are then mashed up into an IoT
+platform for further data analytics and tracking of the status
+of the product (e.g., location and usage time). Meanwhile,
+UX is captured during product development and prototype
+product testing stages. For the former, marketing strategies
+(e.g., questionnaire and focus group) and digital equipment
+Fig. 2 Conceptual framework of the proposed product development process
+140 Front. Mech. Eng. 2018, 13(2): 137–150
+(e.g., eye tracker and video camera) are utilized to reflect
+the perceptions of users toward the co-design process. For
+the latter, the experiences of users are recorded by digital
+equipment (e.g., VR headset and eye tracker) and through
+marketing strategies.
+Smart design processes are pre-designed in a series of
+human participation experiments that are conducted to 1)
+determine the relationship between UX and user preference in the scope of common products (designed by the
+designer), modularized products (co-design), and personalized products (designed by the user); 2) discover which
+method achieves improved UX in a certain context, i.e.,
+product design visualization (e.g., VR and AR) or product
+design rapid prototyping (e.g., 3D printing); 3) determine
+the relationship between the smart attributes and UX of a
+smart wearable product; 4) discover user behavior in the
+co-design human-computer interaction process; and 5)
+provide useful guidelines to engineer-to-order companies
+for customer-centric product development optimization.
+3.2 Smart machining: CPS-based smart machine tools
+After smart design, CPS-enabled smart machine tools are
+used to produce physical products. CPS are can bring
+together virtual and physical worlds to create a truly
+networked world in which intelligent objects communicate
+and interact with one another [53]. In Industry 4.0,
+production systems evolve into CPPS, which comprise
+smart machines, warehousing systems, and production
+facilities that have developed digitally and feature end-toend ICT-based integration [4].
+Smart machine tools can be regarded as combinations of
+different CPS (as shown in Fig. 3). Radio frequency
+identification devices (RFID) tags are attached to critical
+components, such as spindles, bearings, and cutting tools,
+so that physical objects can be uniquely identified. Various
+sensors (accelerometers, dynamometers, AE sensors, etc.),
+cameras, and data acquisition devices are deployed in the
+machine tools to collect real-time machining data on each
+critical component and machining process.
+Communication service deals with the integration,
+communication, and management of real-time machining
+data collected from smart machine tools. Although
+different data communication technologies (Ethernet, RS
+232, 4G network, Bluetooth, etc.) can be utilized to
+transmit real-time data depending on different data
+acquisition devices, the formats of various data originating
+from different machine controllers and sensors pose
+significant challenges to data integration and management.
+Additionally, after gathering all the data, a digital twin for
+each critical component needs to be modeled to comprehensively represent its physical attributes and real-time
+status simultaneously. Standardized data communication
+protocols and information modeling methods are used to
+address these issues. MTConnect is an open, royalty-free
+communication standard intended to enhance the data
+acquisition capabilities of devices and applications and
+move toward a plug-and-play environment to reduce the
+Fig. 3 CPS-enabled smart machine tools
+Pai ZHENG et al. Smart manufacturing systems for Industry 4.0 141
+cost of data integration [54]. MTConnect can translate data
+collected from different devices into the XML data format,
+which can be used by most software applications. ISO
+10303, also known as STEP, is an ISO standard that
+describes product data throughout the life cycle of a
+product independent of any particular system. On the basis
+of these standards, communication service creates digital
+twins for the critical components and provides wellformatted real-time data to various applications through the
+Internet.
+Smart visibility service is an application that takes
+advantage of real-time data provided by the communication service. Given the availability of real-time data from
+field-level devices on the Internet, the real-time status of
+each critical component of smart machine tools can be
+remotely visualized from mobile devices, such as tablets
+and smartphones. Statistical reports on machine tool status
+can be directly accessed by business management systems,
+such as enterprise resource planning (ERP), thus enabling
+seamless communication between field-level manufacturing devices and high-level decision-making systems.
+Detailed historical data would be available if each critical
+component is saved in the cloud and locally by recording
+the real-time data provided by the communication service.
+Then, prognostics and health management (PHM) algorithms can be applied to assess the health state of certain
+components so that proactive maintenance can be achieved
+and machine failure can be avoided. AR can visualize
+machining processes. Combining AR technology with
+real-time manufacturing data collected during machining
+processes will enable intuitive and effective interactions
+between users and smart machine tools.
+3.3 Smart monitoring: Energy consumption monitoring
+Energy-efficient production is a concern of many industrial
+enterprises in Industry 4.0 manufacturing systems. A
+machining workshop contains many machining equipment
+(e.g., machine tools), as shown in Fig. 4. The X axis
+denotes time (in h), and the Y axis denotes power
+consumption (in kW). Currently, energy prices are soaring,
+and environmental protection is a major concern of many
+countries.
+Each piece of machining equipment usually has a fixed
+energy consumption characteristic. Several energy
+demands, such as the power for starting a machine tool,
+idle power, the power for starting the spindle, cutting
+power, and the power of the machine function (tool
+change, work piece handling), during machining operations are usually fixed. Some portions cannot be expressed
+using formulae. For example, the power for starting the
+spindle may have complex expressions, which increase the
+difficulty of calculating the energy demand and subsequent
+optimization. Furthermore, a workshop experiences power
+fluctuations that result in difficulties in establishing an
+energy consumption model. To achieve energy-efficient
+production, the machining energy consumption must be
+monitored in real time.
+Owing to the widespread deployment of various sensors,
+energy consumption data can be collected in Industry 4.0.
+Machine learning methods can be applied to the collected
+data to determine the energy demand characteristics. Deep
+neural network (DNN) is a machine learning method that
+focuses on the analysis of large datasets. It can be utilized
+to extract the energy consumption characteristics or trends
+Fig. 4 Energy-efficient manufacturing
+142 Front. Mech. Eng. 2018, 13(2): 137–150
+of manufacturing equipment on the basis of data obtained
+from energy consumption monitoring.
+Input and output determination is the first procedure in
+DNN. The input includes machine tools, cutting tools,
+materials of parts to be machined, parameters, machining
+strategies, transporters, and auxiliaries. The output is the
+energy consumption of each stage during machining
+processes. Different cutting tools possess different parameter ranges (e.g., cutting velocity and feed rate). The
+machine tool, cutting tool, and material jointly determine
+the cutting energy consumption, which thus becomes a
+variable energy demand. The relationship between the
+combination and cutting of energy consumption can
+therefore be established via DNN.
+3.4 Smart control: Cloud-based numerical control
+Smart control in Industry 4.0 manufacturing systems is
+significant because a machine tool and its control system
+have become highly sophisticated. For example, a current
+computer numerical control (CNC) system can be used by
+an operator, who in turn uses the human-machine interface
+(HMI), switches, and buttons to manipulate the machine
+and make it perform a machining job. Each control system
+of the machine tool operates independently, thus creating
+an “information isolated island” problem. In a cloud
+manufacturing environment, a new and innovative form
+called control system as a service (CSaaS) is provided.
+Users of CSaaS are not limited to machine operators but
+include machine supervisory vendors and even end users
+of the product to address the emerging demands in new
+business models.
+A cloud-based smart control system is illustrated in Fig.
+5. CNC control is used as an example to illustrate the key
+concepts. All non-real-time tasks are executed in the cloud.
+Machining jobs are scheduled and distributed among
+connected machine tools in consideration of their
+capability and availability, which are treated as local
+manufacturing resources. A local operator can start
+machining by logging a part program. The cloud can
+Fig. 5 Cloud-based smart control system
+Pai ZHENG et al. Smart manufacturing systems for Industry 4.0 143
+interpret the part program whether it is in G/M code or in
+STEP-NC. If it is a STEP-NC part program, the cloud will
+generate a tool path from the STEP-NC part program.
+During the tool-path generation process, offline optimization tasks, such as optimization of cutter selection and resequencing of the working steps and cutting parameter, can
+be performed with the help of a knowledge base or other
+optimization services.
+Interpolation is also executed in the cloud, so the
+computational power of the cloud is fully used. If no
+adaptive control is involved, then the generation of
+setpoints by the interpolator is independent of the feedback
+control of the machine tool. The local control system is
+responsible for ensuring that the axes follow the setpoints
+precisely.
+In the local control system, the connection management
+takes charge of managing the Internet connection between
+the cloud and the local. Data monitoring is responsible for
+observing the data received and coping with any
+transmission errors. Proper setpoints are fed to drives and
+transformed into a pulse command, which is finally
+transmitted through the fieldbus and executed by the
+motors. The feedback from the encoder is used by the
+machine monitoring module. By combining the information from other sensors, the machine monitoring module
+provides the status of the machining and machine tool.
+Although HMI is provided by the cloud, in the local
+control system, a simple HMI still displays basic
+information for the operator to control the machine tool
+in the case that the cloud service is unavailable.
+The information from a machine tool, including current
+axis positions, setup, and cutter status, is transmitted to the
+cloud to be used when the tool paths are generated. The
+progress of the machining tasks and the status of the
+machine tool (e.g., operation status and warning information) are transmitted to the cloud by the local control
+system.
+3.5 Smart scheduling: Machine scheduling in smart
+factories
+Smart machine scheduling can be achieved based on smart
+machines, smart monitoring (e.g., energy consumption
+monitoring), and smart control system from the cloud.
+Machine scheduling is a classical problem that has been
+studied for decades [55], and in Industry 4.0, a number of
+new characteristics and requirements exist (Fig. 6).
+Machines in Industry 4.0 are endowed with a certain
+degree of intelligence and can communicate with one
+another by deploying various sensors and wireless
+communication devices (e.g., RFID). In this case,
+machines are, to a large extent, transparent in the sense
+that data of each part of a machine can be conveniently
+collected in real time. Optimal machine scheduling can be
+performed by extracting useful information (such as
+operating status and energy consumption) from the
+Fig. 6 Machine scheduling in Industry 4.0
+144 Front. Mech. Eng. 2018, 13(2): 137–150
+collected data. This situation presents many advantages
+and eliminates several barriers in machine scheduling, such
+as machine breakdown [56] and unavailability [57],
+because machine breakdown or unavailability can be
+foreseen in the Industry 4.0 manufacturing environment.
+Another main difference between machine scheduling in
+Industry 4.0 and traditional machine scheduling is that
+products (or parts) are smart and can communicate with
+machines, which brings new advantages and challenges.
+In the Industry 4.0 manufacturing environment, each
+machine is a CPS entity that can communicate with others
+in physical and virtual worlds (Fig. 6). The essence of
+machine scheduling in Industry 4.0 is the scheduling of
+collaborative CPS [58]. The complexity of machine
+scheduling in Industry 4.0 originates from the typical
+characteristics of CPS, such as autonomous (e.g., selfaware, self-predict, and self-compare), decentralized, and
+real time [59].
+As a result, machine scheduling in Industry 4.0 requires
+efficient, dynamic, and decentralized scheduling methods
+[60]. In fact, machine scheduling in Industry 4.0 can be
+well supported by enhancing a machine into a CPS with
+comprehensive perception. AI, such as multi-agent
+systems, provides an effective instrument for machine
+scheduling in an Industry 4.0 smart factory [61–63]. In
+Industry 4.0 manufacturing systems, scheduling models
+and algorithms are implemented in the cyber space of CPS
+(e.g., cloud); they interact with physical machines and
+cooperatively drive production.
+3.6 Industrial implementation: Smart 3D scanning for
+automated quality inspection
+Material inspection and quality control in a smart
+production environment are challenges in Industry 4.0.
+An Industry 4.0 smart factory is established by merging the
+physical world of shop floor equipment with the virtual
+world of ICT. Under this circumstance, manufacturers
+should be aware that producing a single product must
+remain profitable. Therefore, revolutionary changes in
+smart machines and other smart equipment on the shop
+floor should be conveyed by smart quality control to ensure
+the delivery of best-quality products to customers.
+Customers also desire to have access to real-time quality
+data to ensure that the final products satisfy their requests.
+For this task, a novel technology that can speed up quality
+inspection processes with high accuracy and backward
+traceability is required [64].
+A common technology to execute the quality inspection
+of processing materials and measure the quality of final
+products is the coordinate measuring machine (CMM).
+However, current CMM technologies cannot provide fast
+quality assessment for individual products nor measure
+complex geometric parts of manufactured products.
+Accordingly, technologies in metrology have changed in
+the past few decades from stand-alone and fixed CMM
+equipment to portable measuring devices. Advanced
+optical machine vision technologies are also adopted to
+perform inspection tasks by introducing 3D laser scanning
+for quality inspection. These changes have not only
+brought inspection right to the production line as close to
+the part as possible, but have also made it automated with
+high accuracy.
+Figure 7 shows the principle of 3D scanning for
+automated quality inspection. The process begins by
+scanning an object and creating 3D files of points called
+point clouds as raw input. Unreliable range measurements
+(outliers) are removed through a filtering process. Then,
+Fig. 7 Smart 3D scanning for automated quality inspection
+Pai ZHENG et al. Smart manufacturing systems for Industry 4.0 145
+point clouds are analyzed and compared with those in the
+initial design [65]. The results are visualized with different
+colors to show the degree of quality of each segment of the
+part. The data gathered from each process are stored in a
+large data storage. By using big data analytic tools, control
+charts, mathematical statistics knowledge, and intelligent
+algorithms, the data are processed to provide valuable
+information for manufacturers and customers. This system
+is also connected to the Internet to provide real-time online
+quality data on the processing parts or finished workpiece
+for customer access.
+Automated quality inspection using 3D scanning
+provides accurate quality results, is fast and easy to
+implement, reduces the time consumed by the inspection
+process, and is suitable for all materials; moreover, the final
+part/product can be compared with the initial design to
+ensure fitting performance with other parts [66]. However,
+this technology possesses drawbacks, such as high cost of
+the device, limited point per second scanning volume, and
+need for high-capability hardware for data processing.
+Table 1 summarizes the advantages and disadvantages
+of each individual project in the demonstrative cases.
+4 Current challenges and future
+perspectives
+Most manufacturing systems use typical machinery to
+accomplish various processes according to planned
+production logics. Manual and paper-based working
+mechanisms are commonly utilized to support these
+processes [67]. Several challenges exist in the use of
+these mechanisms. First, working efficiency is low because
+all the operations, interactions, and executions on shop
+floors are time consuming when large amounts of
+manpower are used. For example, machine operators,
+technical engineers, chief engineers, and shop floor
+supervisors usually need to meet to discuss and establish
+a solution when designs are reengineered. Such meetings
+usually last for more than half a day because information or
+data need to be shared and current situations need to be
+analyzed to establish a suitable solution. Second, data
+collection is mainly based on paper sheets or record cards.
+Various workers have to write down critical data, such as
+working pieces, quality data, and WIP level [21]. Workers
+are usually busy with operating machines and reluctant to
+spend time on data recording, which is not a value-adding
+process [68]. Third, shop floor managers have to use data
+to make manufacturing decisions, such as production
+planning and scheduling. These decisions are prone to
+become unreasonable and unpractical when they are based
+on data from a large number of paper sheets or cards
+because dealing with a large number of paper sheets and
+cards is time consuming and tedious; moreover, the
+information obtained is always not up to date. To keep
+pace with the Industry 4.0 era, real-time data collection is
+required for most manufacturing companies. IoT and CPS
+can provide possible solutions to these issues. The future of
+Table 1 Summary of demonstrative scenarios
+Scenarios Advantages Disadvantages
+UX-based personalized
+smart wearable device
+ Users are actively involved in the co-creation process
+for personalization.
+ User experience can be readily obtained/analyzed
+in a real-time design context.
+ Product change can be rapidly prototyped for
+design innovation in a cyber-physical manner.
+ The application scope of the model is limited to highly
+modularized or discreet manufacturing systems
+(e.g., automobile and bicycles), rather than integral or
+continuous processes (e.g., chemical process and
+natural gas).
+CPS-based smart machine
+tools
+ Users can control the machine tool in real time
+by using cloud-based services.
+ Real-time status can be reflected in the user interface.
+ System reliability is based on the stability of
+communication networks.
+ Information confidentiality is an issue on the part
+of end users.
+Energy consumption
+monitoring
+ Energy consumption can be tracked and visualized
+in real time.
+ Decision making/optimization can be based on
+energy consumption.
+ Smart sensors should be equipped to machines.
+ Data transmission relies on multiple channels.
+Cloud-based numerical
+control
+ Control of the machine is servicelized.
+ Highly sophisticated algorisms can be applied.
+ Service is flexible and can be updated and upgraded
+easily.
+ The process know-hows can be well protected.
+ Concerns on cyber security and service availability
+may exist.
+Machine scheduling in
+smart factories
+ Machines are optimally scheduled based on real-time
+information.
+ Any disturbances can be tracked and traced in real time.
+ Advanced decision-making models are required.
+ Real-time data processing models are necessary.
+Smart 3D scanning for
+automated quality inspection
+ Quality inspection can be automatically executed.
+ Quality data can be visualized in real time for decision
+making.
+ Data storage and processing may be an issue if the
+volume of real-time information is large.
+146 Front. Mech. Eng. 2018, 13(2): 137–150
+real-time data collection in manufacturing systems may be
+carried out as follows.
+ IoT-enabled data collection. Typical IoT technologies,
+such as RFID and barcoding, can be embedded into
+various manufacturing resources. In this manner, they are
+converted into smart manufacturing objects (SMOs) that
+can intelligently interact and communicate with one
+another so that real-time production data can be captured
+and collected in real time.
+ Smart sensors. With the rapid development of cuttingedge technologies, smart sensors can now integrate multifunctional capabilities to collect real-time data on temperature, force, pressure, and humidity. These sensors are
+attached to various SMOs so that manufacturing operations
+and production lines or working stations can be synchronized with physical operational and information flows.
+ CPS-based smart machines. In the future, machines
+will be converted into smart objects by taking advantage of
+CPS technology. Smart machines can send their working
+status in real time to a central cloud-based “manager” that
+can monitor their states through a visualization approach.
+Currently, manufacturing companies are facing challenges in visualizing and displaying various manufacturing
+services. Information visibility plays an important role in
+precise decision making in Industry 4.0. Several challenges
+exist when implementing manufacturing virtualization and
+visualization. First, manufacturing objects should be
+visualized in real time to ensure production quality and
+safety. However, the closed-circuit television (CCTV)
+system, which is the only option, cannot reflect the status
+of a working machine. Manufacturing resources should be
+virtualized into various services so that they can be shared
+as a service. Virtualization approaches and sharing models
+have been rarely reported and investigated. Finally, the
+visibility of various manufacturing objects requires a new
+data modeling approach that can combine heterogeneous
+data into a standardized format. Afterward, such data can
+be displayed for different end users who are concerned
+about the different visibility of different equipment.
+However, these research gaps have been rarely studied in
+existing literature.
+To fill these gaps, future research should emphasize the
+following aspects.
+ AR-enabled real-time visibility. Applying AR technology to manufacturing can result in real-time visibility of
+working machines. With the data from smart machines, the
+AR interface can reflect the status of a machine and its
+processing behavior through a visualized model in real
+time. AR-enabled real-time visibility allows end users to
+visualize machine data that are projected onto a real
+machining scene [69].
+ Cyber virtualization modeling. Various physical
+manufacturing resources are modeled by the cyber
+virtualization approach so that their capability and status
+can be reflected in a cloud platform, which is going to be
+shared within an alliance. This modeling approach uses
+data from smart machines and sensors to build a
+standardized service that can be displayed and visualized
+by other users who can benefit from the service.
+Decision making in smart manufacturing systems for
+Industry 4.0 requires information and knowledge, which
+can be mined from large amounts of production data. In a
+recent survey, 55% of the respondents felt that decision
+making is not viewed at senior levels of their organizations
+[70]. Faced with the big data from manufacturing sites,
+several challenges should be addressed. First, decision
+models need a long time to establish a solution when large
+amounts of data are used. Various objectives are utilized
+for different purposes, such as optimization of production
+planning and scheduling [71]. However, precise data input
+is lacking when decision making is carried out. Second,
+decision making in Industry 4.0 always targets manufacturing resource sharing, which can make full use of
+manufacturing equipment and services. A new manufacturing paradigm is thus needed.
+Future decision making should focus on two directions.
+ Decision-making models driven by big data analytics.
+These models can excavate useful information and
+knowledge from large amounts of production data to
+support specific decision making. Advanced technologies
+or algorithms, such as deep machine learning, can be
+integrated into these models where big data analytics are
+encapsulated as services [43]. Such services may be
+deployed in a cloud platform so that they can be
+downloaded easily by end users for daily decision making.
+ Cloud manufacturing. With the support of cloud
+technology and IoT, cloud manufacturing can transform
+various manufacturing resources into services so that end
+users can request services on demand in a convenient payas-you-go manner [72]. Moreover, CPS integration into
+cloud manufacturing enables remote monitoring and
+execution of manufacturing operations. Thus, physical
+machinery and virtualized services are implemented to
+support manufacturing activities and decision making [37].
+The networked manufacturing services allow for smart
+decision making through a collaborative and intelligent full
+sharing and circulation of manufacturing capabilities and
+services.
+5 Summary
+Industry 4.0 holds the promise of increased flexibility,
+mass customization, increased speed, improved quality,
+and enhanced productivity in manufacturing and thus
+enables companies to cope with various challenges, such
+as increasingly individualized products, shortened lead
+time to market, and high product quality. This paper
+presents the conceptual framework of Industry 4.0 smart
+manufacturing systems and showcases several key technologies and demonstrative scenarios. On the basis of the
+demonstrative scenarios, related key technologies, such as
+Pai ZHENG et al. Smart manufacturing systems for Industry 4.0 147
+Internet of Things, CPS, cloud manufacturing, and big data
+analytics, are reviewed. Current challenges and future
+perspectives are also highlighted to inspire researchers and
+practitioners when they embark on Industry 4.0.
+The significant contributions of this work are as follows.
+First, a systematic framework for Industry 4.0 smart
+manufacturing systems is proposed. The framework covers
+many relevant topics, such as design, machining, monitoring, control, and scheduling. It provides an important
+reference for academicians and practitioners to rethink the
+essence of Industry 4.0 from different perspectives.
+Second, key perspectives are reviewed under the framework by combining several studies carried out by the
+authors. Future research directions in terms of data
+collection, virtualization, and decision making are also
+provided. This work is expected to provide the manufacturing industry insights into implementing Industry 4.0 in
+the near future.
+Nomenclature
