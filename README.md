@@ -12,6 +12,6 @@
 
 ● [作業三](https://github.com/mlchung1231/LATrepo/blob/main/week6/HW3.ipynb)
 
-
+● [作業四](https://github.com/mlchung1231/LATrepo/tree/main/week10/homework4(NLP))
 
 ### 專題連結區  
