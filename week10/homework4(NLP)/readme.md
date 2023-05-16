@@ -16,3 +16,6 @@ extra3：將資料存至db.json
 <img width="373" alt="image" src="https://github.com/mlchung1231/LATrepo/blob/main/week10/homework4(NLP)/img/line.jpg">  
 
 <img width="373" alt="image" src="https://github.com/mlchung1231/LATrepo/blob/main/week10/homework4(NLP)/img/db.png">
+
+### 程式碼
+[index.js](https://github.com/mlchung1231/LATrepo/blob/main/week10/homework4(NLP)/index.js)
