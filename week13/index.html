@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Analyze Sample</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="key.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+<h1>大家來找碴:</h1>
+選擇兩張些微不同的圖片，按下 <strong>開始</strong> 按鈕公布答案。
+<br><br>
+<input type="file"name="originalImg"id="originalImg"data-target="file-uploader"accept="image/*">
+<br><br>
+<input type="file"name="changedImg"id="changedImg"data-target="file-uploader"accept="image/*">
+<br><br>
+<button id="myButton"type="button">開始</button>
+<div id="wrapper" style="width:1020px; display:table;">
+    <!--
+    <div id="jsonOutput" style="width:600px; display:table-cell;">
+        Response:
+        <br><br>
+        <textarea id="responseTextArea" class="UIInput" style="width:580px; height:400px;"></textarea>
+    </div>
+    -->
+    <div id="imageDiv" style="width:420px; display:table-cell;">
+        Source image:
+        <br><br>
+        <div style="display: flex;">
+        <img id="sourceImage1"/>
+        <img id="sourceImage2"/>
+        </div>
+        <div id="objectContainer"></div>
+        
+        <p id="picDescription"></p>
+        
+    </div>
+</div>
+</body>
+</html>
