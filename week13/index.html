@@ -10,11 +10,13 @@
 <body>
 <h1>大家來找碴:</h1>
 選擇兩張些微不同的圖片，按下 <strong>開始</strong> 按鈕公布答案。
+<!--將兩個圖片輸入都改為本地上傳方便使用-->
 <br><br>
 <input type="file"name="originalImg"id="originalImg"data-target="file-uploader"accept="image/*">
 <br><br>
 <input type="file"name="changedImg"id="changedImg"data-target="file-uploader"accept="image/*">
 <br><br>
+<!--開始條件改為按下"開始"按鈕-->
 <button id="myButton"type="button">開始</button>
 <div id="wrapper" style="width:1020px; display:table;">
     <!--
@@ -27,12 +29,14 @@
     <div id="imageDiv" style="width:420px; display:table-cell;">
         Source image:
         <br><br>
+        <!--橫向顯示兩張圖片-->
         <div style="display: flex;">
         <img id="sourceImage1"/>
         <img id="sourceImage2"/>
         </div>
+        <!--繪製紅框物件-->
         <div id="objectContainer"></div>
-        
+        <!--文字輸出兩圖差異-->
         <p id="picDescription"></p>
         
     </div>
