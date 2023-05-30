@@ -8,11 +8,13 @@
 
 4.額外問題：相同的圖片Azure回傳的標籤可能不同(如下圖)。   
 
-<img width="373" alt="image" src="https://github.com/mlchung1231/LATrepo/blob/main/week10/homework4(NLP)/img/line.jpg">  
+<img width="373" alt="image" src="https://github.com/mlchung1231/LATrepo/blob/main/week13/Homework5/demo/demo1.png">  
 
-<img width="373" alt="image" src="https://github.com/mlchung1231/LATrepo/blob/main/week10/homework4(NLP)/img/db.png">   
+<img width="373" alt="image" src="https://github.com/mlchung1231/LATrepo/blob/main/week13/Homework5/demo/demo2.png">   
+
+<img width="373" alt="image" src="https://github.com/mlchung1231/LATrepo/blob/main/week13/Homework5/demo/demo2-1.png">   
 
 
 ### 程式碼
 [index.js](https://github.com/mlchung1231/LATrepo/blob/main/week10/homework4(NLP)/index.js)
-123
+
