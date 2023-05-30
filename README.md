@@ -14,7 +14,9 @@
 
 ● [作業四](https://github.com/mlchung1231/LATrepo/tree/main/week10/homework4(NLP))   
 
-● [作業五](https://github.com/mlchung1231/LATrepo/tree/main/week13/Homework5)
+● [作業五](https://github.com/mlchung1231/LATrepo/tree/main/week13/Homework5)   
+
+● [extra](https://github.com/mlchung1231/LATrepo/tree/main/week14)
 
 
 ### 專題連結區  
