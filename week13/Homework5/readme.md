@@ -13,8 +13,13 @@
 <img width="373" alt="image" src="https://github.com/mlchung1231/LATrepo/blob/main/week13/Homework5/demo/demo2.png">   
 
 <img width="373" alt="image" src="https://github.com/mlchung1231/LATrepo/blob/main/week13/Homework5/demo/demo2-1.png">   
+相同的鳥，一個是'bird'，一個是'lovebird'
 
 
 ### 程式碼
-[index.js](https://github.com/mlchung1231/LATrepo/blob/main/week10/homework4(NLP)/index.js)
+本次作業除了main.js，index.html也有稍微更改。   
+
+[main.js](https://github.com/mlchung1231/LATrepo/blob/main/week13/Homework5/main.js)   
+
+[index.html](https://github.com/mlchung1231/LATrepo/blob/main/week13/Homework5/index.html)
 
