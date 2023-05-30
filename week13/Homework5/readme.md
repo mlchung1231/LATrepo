@@ -15,3 +15,4 @@
 
 ### 程式碼
 [index.js](https://github.com/mlchung1231/LATrepo/blob/main/week10/homework4(NLP)/index.js)
+123
