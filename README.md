@@ -20,3 +20,5 @@
 
 
 ### 專題連結區  
+
+[麵包探險家](https://github.com/AndersonTsaiTW/LAT_Repo/tree/main/Mini_Hackathon)
