@@ -8,7 +8,7 @@
 
 4.額外問題：相同的圖片Azure回傳的標籤可能不同(如下圖)。   
 
-<img width="373" alt="image" src="https://github.com/mlchung1231/LATrepo/blob/main/week13/Homework5/demo/demo1.png">  
+<img width="373" alt="image" src="./demo/demo1.png">  
 
 <img width="373" alt="image" src="https://github.com/mlchung1231/LATrepo/blob/main/week13/Homework5/demo/demo2.png">   
 
